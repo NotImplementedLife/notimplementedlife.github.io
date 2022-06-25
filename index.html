@@ -8,15 +8,19 @@
 </div>
 
 <script>
-function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "https://github.com/NotImplementedLife/NotebookAdventure");
-  xhttp.send();
-}
+
+fetch('https://github.com/NotImplementedLife/notimplementedlife.github.io')
+  .then(function (response) {		
+		return response.text();
+	}).then(function (data) {		
+		console.log(data);
+	}).catch(function (err) {		
+		console.warn('Something went wrong.', err);
+	})
+  .catch(e => {
+    console.log(e);
+    return e;
+  });
 </script>
 
 </body>
