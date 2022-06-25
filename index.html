@@ -9,9 +9,9 @@
 
 <script>
 
-fetch('https://github.com/NotImplementedLife/notimplementedlife.github.io')
+fetch('./db/projects.json')
   .then(function (response) {		
-		return response.text();
+		return response.json();
 	}).then(function (data) {		
 		console.log(data);
 	}).catch(function (err) {		
