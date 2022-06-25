@@ -61,7 +61,7 @@ div.project_card span.project_platform.NDS::before {
 }
 
 div.project_card span.project_platform.DotNet {		
-	background-color:green;
+	background-color:darkblue;
 	color:white;	
 }
 

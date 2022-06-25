@@ -23,7 +23,7 @@ const navbar_default_style =
 		</div>
 	  </li>
 	  <li class="nav-item">
-		<a class="nav-link" href="#">About</a>
+		<a class="nav-link" href="about.html">About</a>
 	  </li>
 	  <!--li class="nav-item">
 		<a class="nav-link disabled" href="#">Disabled</a>
