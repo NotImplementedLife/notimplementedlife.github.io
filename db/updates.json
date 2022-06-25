@@ -1,8 +1,14 @@
 [
 	{
 		"title" : "Test update 01",
-		"date" : "January 1, 1970 00:00:00 UTC",
+		"timestamp" : "January 1, 1970 00:00:00 UTC",
 		"description" : "bla bla bla...",		
+		"project" : null
+	},
+	{
+		"title" : "Test update 02",
+		"timestamp" : "January 1, 1971 00:00:00 UTC",
+		"description" : "The same as the previous one",		
 		"project" : null
 	}
 ]

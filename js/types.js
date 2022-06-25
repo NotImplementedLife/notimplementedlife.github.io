@@ -7,3 +7,10 @@ function Project() {
 	this.description = "A brief description...";
 	return this;
 };
+
+function Update() {
+	this.title = "title";
+	this.description = "description";
+	this.date = Date.now();
+	this.project = null;
+}
