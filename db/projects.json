@@ -1,11 +1,50 @@
 [
 	{
-		"name": "FSPDS"
+		"is_homebrew" : true,
+		"platform" : "GBA",
+		"name" : "A 4D Christmas",
+		"type" : "game"
+	},	
+	{
+		"is_homebrew" : true,
+		"platform" : "GB",
+		"name" : "AIRPLANZ",
+		"type" : "game"
+	},		
+	{
+		"is_homebrew" : true,
+		"platform" : "GB",
+		"name": "Breksta's Cat",
+		"type" : "game"
 	},
 	{
-		"name": "Notebook Adventure"
+		"is_homebrew" : true,
+		"platform" : "NDS",
+		"name" : "d-Elusion",
+		"type" : "tool"
 	},
 	{
-		"name": "Breksta's Cat"
-	}		
+		"is_homebrew" : true,
+		"platform" : "NDS",
+		"name" : "FSPDS",
+		"type" : "tool"
+	},
+	{
+		"is_homebrew" : true,
+		"platform" : "GBA",
+		"name": "Notebook Adventure",
+		"type" : "game"
+	},
+	{
+		"is_homebrew" : true,
+		"platform" : "GB",
+		"name" : "Rubik",
+		"type" : "game"
+	},
+	{
+		"is_homebrew" : true,
+		"platform" : "GBC",
+		"name" : "Trabant",
+		"type" : "game"
+	}
 ]

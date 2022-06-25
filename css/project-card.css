@@ -1,0 +1,83 @@
+div.project_card {
+	background:lightgray;
+	display:inline-block;
+	padding:7px 12px;
+	border-radius:4px;			
+	margin:15px;
+}
+
+div.project_card .project_name {
+	display:inline-block;
+	font-weight:600;
+}
+
+div.project_card span.project_platform {		
+	display:inline-block;	
+	background-color:black;
+	color:white;
+	padding:2px 7px;
+	border-radius:7px;
+	font-size:75%;
+}
+
+div.project_card span.project_platform::before {		
+	content:"(...)";
+}
+
+div.project_card span.project_platform.GB {		
+	background-color:green;
+	color:white;	
+}
+
+div.project_card span.project_platform.GB::before {		
+	content:"GB";
+}
+
+div.project_card span.project_platform.GBC {		
+	background-color:purple;
+	color:white;	
+}
+
+div.project_card span.project_platform.GBC::before {		
+	content:"GBC";
+}
+
+div.project_card span.project_platform.GBA {		
+	background-color:blue;
+	color:white;		
+}
+
+div.project_card span.project_platform.GBA::before {		
+	content:"GBA";
+}
+
+div.project_card span.project_platform.NDS {		
+	background-color:red;
+	color:white;	
+}
+
+div.project_card span.project_platform.NDS::before {		
+	content:"NDS";
+}
+
+div.project_card span.project_platform.DotNet {		
+	background-color:green;
+	color:white;	
+}
+
+div.project_card span.project_platform.DotNet::before {		
+	content:".NET";
+}
+
+/* Simple */
+
+div.project_card.simple {	
+	background:transparent;
+	display:block;
+	padding:0;
+	margin:2px;
+}
+
+div.project_card.simple .project_name {	
+	font-weight:normal;
+}

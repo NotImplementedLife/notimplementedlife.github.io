@@ -1,0 +1,18 @@
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+	color: #880000 !important;
+}
+
+.navbar-custom .navbar-brand {	
+	font-family: Consolas;
+}
+
+.navbar-custom .btn {
+	color: #880000;
+	border:#880000;
+}
+
+.navbar-custom .btn:hover {
+	color: #FFFFFF;
+	background:#880000;
+}
