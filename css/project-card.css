@@ -69,6 +69,31 @@ div.project_card span.project_platform.DotNet::before {
 	content:".NET";
 }
 
+
+div.project_card span.project_status {
+	display:inline-block;
+	color:black;	
+}
+
+div.project_card span.project_status::before {		
+	content: "•";
+	font-size:25px;
+	font-family:Consolas;
+}
+
+div.project_card span.project_status.inactive {	
+	color:red;	
+}
+
+div.project_card span.project_status.active {	
+	color:green;	
+}
+
+div.project_card span.project_status.stalled {	
+	color:orange;	
+}
+
+
 /* Simple */
 
 div.project_card.simple {	
@@ -80,4 +105,24 @@ div.project_card.simple {
 
 div.project_card.simple .project_name {	
 	font-weight:normal;
+}
+
+div.project_card.simple span.project_status::before {		
+	content: "•";
+	font-size:20px;
+	font-family:Consolas;
+}
+
+/* Card */
+
+div.project_card.card {	
+	background:transparent;
+	display: inline-block;
+	padding:0;
+	margin:0;
+}
+
+div.project_card.card .project_name {	
+	font-weight:normal;	
+	display:block;
 }

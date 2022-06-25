@@ -5,6 +5,7 @@ function Project() {
 	this.platform = "";
 	this.type = "";	
 	this.description = "A brief description...";
+	this.status = "development";
 	return this;
 };
 
