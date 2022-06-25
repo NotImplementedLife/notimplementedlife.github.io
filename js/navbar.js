@@ -10,7 +10,7 @@ const navbar_default_style =
 		<a class="nav-link" href="index.html">Home</a>
 	  </li>
 	  <li class="nav-item">
-		<a class="nav-link" href="#">Categories</a>
+		<a class="nav-link" href="categories.html">Categories</a>
 	  </li>
 	  <li class="nav-item dropdown">
 		<a class="nav-link dropdown-toggle" href="#" id="navbarProjects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

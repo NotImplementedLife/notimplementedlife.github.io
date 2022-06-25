@@ -3,48 +3,56 @@
 		"is_homebrew" : true,
 		"platform" : "GBA",
 		"name" : "A 4D Christmas",
+		"internal-name" : "A-4D-Christmas",
 		"type" : "game"
 	},	
 	{
 		"is_homebrew" : true,
 		"platform" : "GB",
 		"name" : "AIRPLANZ",
+		"internal-name" : "AIRPLANZ",
 		"type" : "game"
 	},		
 	{
 		"is_homebrew" : true,
 		"platform" : "GB",
 		"name": "Breksta's Cat",
+		"internal-name" : "brekstascat",
 		"type" : "game"
 	},
 	{
 		"is_homebrew" : true,
 		"platform" : "NDS",
 		"name" : "d-Elusion",
+		"internal-name" : "d-Elusion",
 		"type" : "tool"
 	},
 	{
 		"is_homebrew" : true,
 		"platform" : "NDS",
 		"name" : "FSPDS",
+		"internal-name" : "FSPDS",
 		"type" : "tool"
 	},
 	{
 		"is_homebrew" : true,
 		"platform" : "GBA",
 		"name": "Notebook Adventure",
+		"internal-name" : "NotebookAdventure",
 		"type" : "game"
 	},
 	{
 		"is_homebrew" : true,
 		"platform" : "GB",
 		"name" : "Rubik",
+		"internal-name" : "rubik",
 		"type" : "game"
 	},
 	{
 		"is_homebrew" : true,
 		"platform" : "GBC",
 		"name" : "Trabant",
+		"internal-name" : "Trabant",
 		"type" : "game"
 	}
 ]

@@ -9,6 +9,6 @@
 	for(x in projects)
 	{
 		var prj = projects[x];
-		$('body').append(generate_card(prj,default_card_style));
+		//$('body').append(generate_card(prj,default_card_style));
 	}
 })();	
