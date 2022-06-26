@@ -3,3 +3,8 @@
 @import "navbar-custom.css";
 @import "updates.css";
 
+.jumbotron {
+	background:#800000;
+	color:white;
+	border-radius:0;
+}

@@ -13,7 +13,7 @@ const simple_card_style =
 </div>`;
 
 const card_card_style =
-`<div class="project_card card col-lg-3 clickable" style="cursor:pointer" meta="@(internal-name)">
+`<div class="project_card card col-md-3 clickable" style="cursor:pointer" meta="@(internal-name)">
   <img class="card-img-top" src="res/@(type).png">
   <div class="card-body">
 	<h5 class="project_name card-title text-center">

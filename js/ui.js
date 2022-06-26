@@ -1,3 +1,30 @@
+const footer =
+`<div class="jumbotron" style="margin:0; margin-top:15vh;">		
+	<table style="width:100%; table-layout: fixed;">						
+		<tr>
+			<th></th>
+			<th><h4>Contact</h4></th>
+			<th><h4>Also on</h4></th>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Discord (NotImpLife#1049)</td>				
+			<td><a href="https://notimplementedlife.itch.io">itch.io</a></td>				
+		</tr>
+		<tr>
+			<td></td>
+			<td><a href="https://twitter.com/NotImpLife">Twitter</a></td>
+			<td><a href="https://www.youtube.com/channel/UC-0C58sSNynr5kTgT24NXqQ">Youtube</a></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><a href="https://github.com/NotImplementedLife">GitHub</a></td>
+		</tr>
+	</table>
+</div>`;
+
+
 (async function build_ui() {		
 	let projects = await db_get_projects();
 	let updates = await db_get_updates();
@@ -56,5 +83,8 @@
 		$('#modal_presentation').on('shown.bs.modal', function () {
 			  $('#myInput').trigger('focus')
 			})
+			
+		$('body').append(footer);
 	});
+		
 })();	
