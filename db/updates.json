@@ -1,14 +1,1 @@
-[
-	{
-		"title" : "Test update 01",
-		"timestamp" : "January 1, 1970 00:00:00 UTC",
-		"description" : "bla bla bla...",		
-		"project" : null
-	},
-	{
-		"title" : "Test update 02",
-		"timestamp" : "January 1, 1971 00:00:00 UTC",
-		"description" : "The same as the previous one",		
-		"project" : null
-	}
-]
+[{"description":"bla bla bla...","title":"Test update 01","timestamp":"1971-01-01T02:00:00+02:00","project":null},{"description":"The same as the previous one","title":"Test update 02","timestamp":"1972-01-01T02:00:00+02:00","project":null},{"description":"Work on FSPDS is postponed until I have the chance do a hardware test","title":"Work on FSPDS is postponed until I have the chance do a hardware test","timestamp":"2022-06-26T11:57:21.2750155+03:00","project":null}]
