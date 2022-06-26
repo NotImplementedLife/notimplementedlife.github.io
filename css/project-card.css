@@ -11,61 +11,43 @@ div.project_card .project_name {
 	font-weight:600;
 }
 
-div.project_card span.project_platform {		
+div.project_card span.project_platform::after {		
 	display:inline-block;	
 	background-color:black;
 	color:white;
 	padding:2px 7px;
 	border-radius:7px;
 	font-size:75%;
-}
-
-div.project_card span.project_platform::before {		
 	content:"(...)";
 }
 
-div.project_card span.project_platform.GB {		
+div.project_card span.project_platform.GB::after {		
 	background-color:green;
 	color:white;	
-}
-
-div.project_card span.project_platform.GB::before {		
 	content:"GB";
 }
 
-div.project_card span.project_platform.GBC {		
+div.project_card span.project_platform.GBC::after {		
 	background-color:purple;
 	color:white;	
-}
-
-div.project_card span.project_platform.GBC::before {		
 	content:"GBC";
 }
 
-div.project_card span.project_platform.GBA {		
+div.project_card span.project_platform.GBA::after {		
 	background-color:blue;
 	color:white;		
+	content:"GBA";	
 }
 
-div.project_card span.project_platform.GBA::before {		
-	content:"GBA";
-}
-
-div.project_card span.project_platform.NDS {		
-	background-color:red;
+div.project_card span.project_platform.NDS::after {		
+	background-color:#800000;
 	color:white;	
-}
-
-div.project_card span.project_platform.NDS::before {		
 	content:"NDS";
 }
 
-div.project_card span.project_platform.DotNet {		
+div.project_card span.project_platform.DotNet::after {		
 	background-color:darkblue;
 	color:white;	
-}
-
-div.project_card span.project_platform.DotNet::before {		
 	content:".NET";
 }
 
@@ -144,6 +126,7 @@ div.project_card.modal span.project_status::before {
 	color:white;
 	background:#111111;
 	padding:3px;
+	padding-left:5px;
 	border-radius : 4px 0px 0px 4px;	
 }
 
@@ -151,6 +134,7 @@ div.project_card.modal span.project_status::after {
 	font-size:14px;
 	font-family:auto;
 	padding:3px;
+	padding-right:5px;
 	border-radius : 0px 4px 4px 0px;	
 	color:white;
 }
@@ -169,4 +153,46 @@ div.project_card.modal span.project_status.inactive::after {
 	content: "inactive";	
 	background:red;
 }
+
+div.project_card.modal span.project_platform::after {		
+	font-size:14px;
+	font-family:auto;
+	padding:3px;
+	padding-right:5px;
+	border-radius : 0px 4px 4px 0px;		
+	display:inline;
+}
+
+div.project_card.modal span.project_platform::before {			
+	font-size:14px;
+	font-family:auto;
+	padding:3px;
+	padding-left:5px;
+	content:"Platform";
+	background:#111111;
+	color:white;
+	border-radius : 4px 0px 0px 4px;
+}
+
+
+div.project_card.modal span.project_platform.GB::after {		
+	content:"Game Boy";
+}
+
+div.project_card.modal span.project_platform.GBC::after {		
+	content:"Game Boy Color";
+}
+
+div.project_card.modal span.project_platform.GBA::after {		
+	content:"Game Boy Advance";
+}
+
+div.project_card.modal span.project_platform.NDS::after {		
+	content:"Nintendo DS";
+}
+
+
+
+
+
 

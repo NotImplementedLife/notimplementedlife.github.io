@@ -12,14 +12,29 @@
 	}
 	
 	var row = $("<div class='row'>");
+	var k=0;
 	for(i in projects) {		
+		var add_it = $.urlParam('platform')==null && $.urlParam('type')==null;		
+		if(!add_it && $.urlParam('platform')!=null) {
+			platform = $.urlParam('platform');
+			add_it = platform == projects[i].platform;
+		}
+		if(!add_it && $.urlParam('type')!=null) {
+			type = $.urlParam('type');
+			add_it = type == projects[i].type;
+		}
+		if(!add_it) continue;
+	
 		var p_elem = generate_card(projects[i], card_card_style);
 		row.append(p_elem);		
-		if(i%4==3) {
+		if(k%4==3) {
 			$('#projects').append(row);
 			row = $("<div class='row'>");
+			k++;
 		}
 	}
+	if($.urlParam('platform')!=null || $.urlParam('type')!=null)
+		$('#FilterCategory').html("Filtered");
 	$('#projects').append(row);
 	
 	$(document).ready(function(){

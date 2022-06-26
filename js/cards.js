@@ -35,6 +35,7 @@ const modal_card_style =
 	  </div>
 	  <div class="modal-body">
 		<span class="project_status @(status)"></span>
+		<span class="project_platform @(platform)"></span>			
 		<p>Description blabla...</p>
 	  </div>
 	  <!--div class="modal-footer">
