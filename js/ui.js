@@ -21,4 +21,25 @@
 		}
 	}
 	$('#projects').append(row);
+	
+	$(document).ready(function(){
+		$('.project_card.clickable').click(function(){
+			proj_name = $(this).attr("meta");			
+			var project = null;
+			for(var i in projects) {
+				if(projects[i]["internal-name"]==proj_name) {
+					project = projects[i];
+					break;
+				}
+			}
+			//alert(JSON.stringify(project));
+			$('#modal_presentation').html(generate_card(project, modal_card_style));
+			$('#modal_presentation').modal({});
+			
+		});
+		
+		$('#modal_presentation').on('shown.bs.modal', function () {
+			  $('#myInput').trigger('focus')
+			})
+	});
 })();	
