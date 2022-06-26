@@ -1,6 +1,6 @@
 function Project() {
 	this.name = "project_name";
-	this.category = "";
+	this.category = "";	
 	this.is_homebrew = false;	
 	this.platform = "";
 	this.type = "";	

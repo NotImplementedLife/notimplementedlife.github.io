@@ -1,5 +1,6 @@
 [
 	{
+		"description" : "Christmas-themed 3D space shooter with a magical sleigh",
 		"is_homebrew" : true,
 		"platform" : "GBA",
 		"name" : "A 4D Christmas",
@@ -8,6 +9,7 @@
 		"type" : "game"		
 	},	
 	{
+		"description" : "Game Boy port of a pen and paper battleship-like game, but with planes",
 		"is_homebrew" : true,
 		"platform" : "GB",
 		"name" : "AIRPLANZ",
@@ -16,6 +18,7 @@
 		"type" : "game"
 	},		
 	{
+		"description" : "Sliding puzzle game, also an attempt of 2D scroll RPG",
 		"is_homebrew" : true,
 		"platform" : "GB",
 		"name": "Breksta's Cat",
@@ -24,6 +27,7 @@
 		"type" : "game"
 	},
 	{
+		"description" : "A kitty trapped in an invisible labirint trying to find the way to its mother",
 		"is_homebrew" : true,
 		"platform" : "NDS",
 		"name" : "d-Elusion",		
@@ -32,6 +36,7 @@
 		"type" : "game"
 	},
 	{
+		"description" : "A DS Phat/Lite app the plays Flipnote Studio .ppm files directly from the flashcard.",
 		"is_homebrew" : true,
 		"platform" : "NDS",
 		"name" : "FSPDS",		
@@ -40,6 +45,7 @@
 		"type" : "tool"
 	},
 	{
+		"description" : "My first platformer game happens to take place on a notebook page.",
 		"is_homebrew" : true,
 		"platform" : "GBA",
 		"name": "Notebook Adventure",
@@ -48,6 +54,7 @@
 		"type" : "game"
 	},
 	{
+		"description" : "A rubik's cube simulator for the Game Boy",
 		"is_homebrew" : true,
 		"platform" : "GB",
 		"name" : "Rubik",
@@ -56,6 +63,7 @@
 		"type" : "game"
 	},
 	{
+		"description" : "Nostalgia & messing around with parallax on Game Boy",
 		"is_homebrew" : true,
 		"platform" : "GBC",
 		"name" : "Trabant",

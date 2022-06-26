@@ -19,7 +19,7 @@ const card_card_style =
 	<h5 class="project_name card-title text-center">
 		<span class="project_status @(status)" title="@(status)"></span>
 		@(name)
-		<span class="project_platform @(platform)"></span>
+		<span class="project_platform @(platform)"></span>		
 	</h5>								
   </div>
 </div>`;
@@ -36,7 +36,8 @@ const modal_card_style =
 	  <div class="modal-body">
 		<span class="project_status @(status)"></span>
 		<span class="project_platform @(platform)"></span>			
-		<p>Description blabla...</p>
+		<p>@(description)</p>
+		<hr/>
 	  </div>
 	  <!--div class="modal-footer">
 		<button type="button" class="btn btn-primary">Save changes</button>
