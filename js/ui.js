@@ -25,7 +25,7 @@ const footer =
 </div>`;
 
 
-(async function build_ui() {		
+async function build_ui() {		
 	let projects = await db_get_projects();
 	let updates = await db_get_updates();
 	
@@ -34,7 +34,15 @@ const footer =
 	});
 	
 	for(i in updates) {
-		var u_elem = generate_update(updates[i],update_style);		
+		if(updates[i].project != null) {
+			for(j in projects) {				
+				if(projects[j]["internal-name"] == updates[i].project) {					
+					updates[i].project = projects[j];
+					break;
+				}
+			}
+		}
+		var u_elem = generate_update(updates[i],update_style);				
 		$("#updates_feed").append(u_elem);
 	}
 	
@@ -60,6 +68,8 @@ const footer =
 			k++;
 		}
 	}
+		
+	
 	if($.urlParam('platform')!=null || $.urlParam('type')!=null)
 		$('#FilterCategory').html("Filtered");
 	$('#projects').append(row);
@@ -87,4 +97,6 @@ const footer =
 		$('body').append(footer);		
 	});
 		
-})();	
+}
+
+build_ui();	

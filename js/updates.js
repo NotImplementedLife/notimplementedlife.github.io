@@ -1,8 +1,8 @@
 const update_style = `<div class="update">
-	<h3>@(title)</h3>
-	<span class="timestamp" title="@(timestamp)">@(timetext)</span><br/>			
+	<span>@(project_card) <h3>@(title)</h3></span>	
+	<span class="timestamp" title="@(timestamp)">@(timetext)</span><br/>				
 	<p class="description">@(description)</p>
-	<hr/>
+	<hr/>	
 </div>`;
 
 
@@ -14,6 +14,9 @@ function generate_update(update, update_style) {
 		html = html.replaceAll(token, value);
 	}		
 	html = html.replaceAll("@(timetext)", timeDifference(Date.now(), Date.parse(update.timestamp)));	
+	console.log(update.project);
+	html = html.replaceAll("@(project_card)", generate_card(update.project, default_card_style)[0].outerHTML);
+	
 	return $(html);
 }
 

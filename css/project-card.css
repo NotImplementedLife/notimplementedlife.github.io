@@ -1,9 +1,7 @@
-div.project_card {
-	background:lightgray;
+div.project_card {	
 	display:inline-block;
-	padding:7px 12px;
-	border-radius:4px;			
-	margin:15px;
+	padding:3px 10px;
+	border-radius:4px;
 }
 
 div.project_card .project_name {
