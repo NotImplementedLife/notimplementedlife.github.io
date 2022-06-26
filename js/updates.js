@@ -12,10 +12,13 @@ function generate_update(update, update_style) {
 		var token = `@(${property})`;
 		var value = update[property];
 		html = html.replaceAll(token, value);
-	}		
+	}			
 	html = html.replaceAll("@(timetext)", timeDifference(Date.now(), Date.parse(update.timestamp)));	
 	console.log(update.project);
-	html = html.replaceAll("@(project_card)", generate_card(update.project, default_card_style)[0].outerHTML);
+	if(update.project!=null)
+		html = html.replaceAll("@(project_card)", generate_card(update.project, default_card_style)[0].outerHTML);
+	else
+		html = html.replaceAll("@(project_card)", "");
 	
 	return $(html);
 }
