@@ -19,7 +19,7 @@ const card_card_style =
 	<h5 class="project_name card-title text-center">
 		<span class="project_status @(status)" title="@(status)"></span>
 		@(name)
-		<span class="project_platform @(platform)"></span>		
+		<span class="project_platform @(platform)" style="display:inline-block"></span>		
 	</h5>								
   </div>
 </div>`;
