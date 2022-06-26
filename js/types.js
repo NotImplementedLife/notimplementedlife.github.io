@@ -6,6 +6,7 @@ function Project() {
 	this.type = "";	
 	this.description = "A brief description...";
 	this.status = "development";
+	this.cats = false;
 	return this;
 };
 

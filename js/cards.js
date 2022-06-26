@@ -36,6 +36,7 @@ const modal_card_style =
 	  <div class="modal-body">
 		<span class="project_status @(status)"></span>
 		<span class="project_platform @(platform)"></span>			
+		<span class="cuteness-alert @(cats)"></span>			
 		<p>@(description)</p>
 		<hr/>
 	  </div>
@@ -54,5 +55,7 @@ function generate_card(proj, card_style) {
 		var value = proj[property];
 		html = html.replaceAll(token, value);
 	}
-	return $(html);
+	var obj = $(html);
+	$('span.cuteness-alert.true', obj).prop("title", "Cuteness alert : this project contains cats");	
+	return obj;
 }

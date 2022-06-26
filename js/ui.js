@@ -1,5 +1,5 @@
 const footer =
-`<div class="jumbotron" style="margin:0; margin-top:15vh;">		
+`<div class="jumbotron" style="margin:0; margin-top:15vh; min-height:50vh">		
 	<table style="width:100%; table-layout: fixed;">						
 		<tr>
 			<th></th>
@@ -84,7 +84,7 @@ const footer =
 			  $('#myInput').trigger('focus')
 			})
 			
-		$('body').append(footer);
+		$('body').append(footer);		
 	});
 		
 })();	

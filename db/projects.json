@@ -20,6 +20,7 @@
 	{
 		"description" : "Sliding puzzle game, also an attempt of 2D scroll RPG",
 		"is_homebrew" : true,
+		"cats" : true,
 		"platform" : "GB",
 		"name": "Breksta's Cat",
 		"status" : "stalled",
@@ -29,7 +30,8 @@
 	{
 		"description" : "A kitty trapped in an invisible labirint trying to find the way to its mother",
 		"is_homebrew" : true,
-		"platform" : "NDS",
+		"cats" : true,
+		"platform" : "NDS",		
 		"name" : "d-Elusion",		
 		"internal-name" : "d-Elusion",
 		"status" : "inactive",
@@ -47,6 +49,7 @@
 	{
 		"description" : "My first platformer game happens to take place on a notebook page.",
 		"is_homebrew" : true,
+		"cats" : true,
 		"platform" : "GBA",
 		"name": "Notebook Adventure",
 		"internal-name" : "NotebookAdventure",

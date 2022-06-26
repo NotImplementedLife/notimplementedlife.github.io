@@ -76,6 +76,16 @@ div.project_card span.project_status.stalled {
 }
 
 
+div.project_card span.cuteness-alert.true::before {
+	display:inline-block;	
+	background-color:#e75480;
+	color:white;
+	padding:2px 7px;
+	border-radius:7px;
+	font-size:75%;
+	content:"Cats";	
+}
+
 /* Simple */
 
 div.project_card.simple {	
@@ -189,6 +199,17 @@ div.project_card.modal span.project_platform.GBA::after {
 
 div.project_card.modal span.project_platform.NDS::after {		
 	content:"Nintendo DS";
+}
+
+div.project_card.modal span.cuteness-alert.true::before {
+	display:inline;	
+	font-family:auto;
+	background-color:#e75480;
+	color:white;
+	padding:3px 5px;	
+	border-radius:4px;
+	font-size:14px;
+	content:"Cats";	
 }
 
 
