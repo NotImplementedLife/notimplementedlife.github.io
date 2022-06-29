@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['black_0',['Black',['../colors_8hpp.html#a64c754ec66f3b4c8c84c9e6b222a9781',1,'Astralbrew::Video::Colors']]],
+  ['blocks_5fspr_5f16x16_5f4bit_1',['BLOCKS_SPR_16x16_4bit',['../obj__allocator_8hpp.html#a2567e8be7df4b60cdd9736153d8f90a6',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f16x16_5f8bit_2',['BLOCKS_SPR_16x16_8bit',['../obj__allocator_8hpp.html#aea7d946655dc7862c40fb07b5910ccdd',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f16x32_5f4bit_3',['BLOCKS_SPR_16x32_4bit',['../obj__allocator_8hpp.html#a500a68d04c343019e0e5f34e7a6ad04b',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f16x32_5f8bit_4',['BLOCKS_SPR_16x32_8bit',['../obj__allocator_8hpp.html#a824b03daebeb46d50414fa6d64baf912',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f16x8_5f4bit_5',['BLOCKS_SPR_16x8_4bit',['../obj__allocator_8hpp.html#a641b0e2244335e2ec8f29695650f23a6',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f16x8_5f8bit_6',['BLOCKS_SPR_16x8_8bit',['../obj__allocator_8hpp.html#a4c68889c9afcba3efd3894c6042bf2dd',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f32x16_5f4bit_7',['BLOCKS_SPR_32x16_4bit',['../obj__allocator_8hpp.html#a8b7c62f4a90530bf96ce027ba1c50d7a',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f32x16_5f8bit_8',['BLOCKS_SPR_32x16_8bit',['../obj__allocator_8hpp.html#a224177339824bcde075f95b8e8a00e9a',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f32x32_5f4bit_9',['BLOCKS_SPR_32x32_4bit',['../obj__allocator_8hpp.html#a9cfba019be734a018922373393f60dd5',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f32x32_5f8bit_10',['BLOCKS_SPR_32x32_8bit',['../obj__allocator_8hpp.html#a6b0ddf6c0cb631a1e3af4dc84722ab5a',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f32x64_5f4bit_11',['BLOCKS_SPR_32x64_4bit',['../obj__allocator_8hpp.html#a828c5feb96bfd9829e5d226591d5e4dd',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f32x68_5f8bit_12',['BLOCKS_SPR_32x68_8bit',['../obj__allocator_8hpp.html#add3274a2f634b5190e4c861cb5a372c0',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f64x32_5f4bit_13',['BLOCKS_SPR_64x32_4bit',['../obj__allocator_8hpp.html#a4fd39e60770043a9132aaa4ac0c72af7',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f64x64_5f4bit_14',['BLOCKS_SPR_64x64_4bit',['../obj__allocator_8hpp.html#a3f34928a3f1f77a34e5016210dfa367d',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f68x32_5f8bit_15',['BLOCKS_SPR_68x32_8bit',['../obj__allocator_8hpp.html#aae50f1dd15d23cb287e3a3fd2b69893a',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f68x68_5f8bit_16',['BLOCKS_SPR_68x68_8bit',['../obj__allocator_8hpp.html#a0c50096877336501ce75e48aa16ed082',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f8x16_5f4bit_17',['BLOCKS_SPR_8x16_4bit',['../obj__allocator_8hpp.html#abb06b34ab6b38c2cda4cec4ee9efd8b7',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f8x16_5f8bit_18',['BLOCKS_SPR_8x16_8bit',['../obj__allocator_8hpp.html#aa7379066b8d766cfae0c158d36df6794',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f8x8_5f4bit_19',['BLOCKS_SPR_8x8_4bit',['../obj__allocator_8hpp.html#abf811f8d2ee4811ed3a1974fbd1f2dd9',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blocks_5fspr_5f8x8_5f8bit_20',['BLOCKS_SPR_8x8_8bit',['../obj__allocator_8hpp.html#ab7c745720b3893b096644513b6a702e8',1,'Astralbrew::Allocator::ObjAllocator']]],
+  ['blue_21',['Blue',['../colors_8hpp.html#a7793dd6c25f6e46a4e913464682aeb95',1,'Astralbrew::Video::Colors']]],
+  ['build_22',['BUILD',['../version_8hpp.html#a5e6e5afc5b67219536c63f227ebeaf82',1,'Astralbrew::Version']]],
+  ['build_5ftype_23',['BUILD_TYPE',['../version_8hpp.html#a28d8981565c3e2966384bd8e4bc341ba',1,'Astralbrew::Version']]]
+];

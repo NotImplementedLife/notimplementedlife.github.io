@@ -1,0 +1,25 @@
+var obj__allocator_8hpp =
+[
+    [ "alloc", "obj__allocator_8hpp.html#ad8457eba0d1a119879ba92925868f1ac", null ],
+    [ "dealloc", "obj__allocator_8hpp.html#a01e4f7a26755cff4409e84f37f2896a8", null ],
+    [ "BLOCKS_SPR_16x16_4bit", "obj__allocator_8hpp.html#a2567e8be7df4b60cdd9736153d8f90a6", null ],
+    [ "BLOCKS_SPR_16x16_8bit", "obj__allocator_8hpp.html#aea7d946655dc7862c40fb07b5910ccdd", null ],
+    [ "BLOCKS_SPR_16x32_4bit", "obj__allocator_8hpp.html#a500a68d04c343019e0e5f34e7a6ad04b", null ],
+    [ "BLOCKS_SPR_16x32_8bit", "obj__allocator_8hpp.html#a824b03daebeb46d50414fa6d64baf912", null ],
+    [ "BLOCKS_SPR_16x8_4bit", "obj__allocator_8hpp.html#a641b0e2244335e2ec8f29695650f23a6", null ],
+    [ "BLOCKS_SPR_16x8_8bit", "obj__allocator_8hpp.html#a4c68889c9afcba3efd3894c6042bf2dd", null ],
+    [ "BLOCKS_SPR_32x16_4bit", "obj__allocator_8hpp.html#a8b7c62f4a90530bf96ce027ba1c50d7a", null ],
+    [ "BLOCKS_SPR_32x16_8bit", "obj__allocator_8hpp.html#a224177339824bcde075f95b8e8a00e9a", null ],
+    [ "BLOCKS_SPR_32x32_4bit", "obj__allocator_8hpp.html#a9cfba019be734a018922373393f60dd5", null ],
+    [ "BLOCKS_SPR_32x32_8bit", "obj__allocator_8hpp.html#a6b0ddf6c0cb631a1e3af4dc84722ab5a", null ],
+    [ "BLOCKS_SPR_32x64_4bit", "obj__allocator_8hpp.html#a828c5feb96bfd9829e5d226591d5e4dd", null ],
+    [ "BLOCKS_SPR_32x68_8bit", "obj__allocator_8hpp.html#add3274a2f634b5190e4c861cb5a372c0", null ],
+    [ "BLOCKS_SPR_64x32_4bit", "obj__allocator_8hpp.html#a4fd39e60770043a9132aaa4ac0c72af7", null ],
+    [ "BLOCKS_SPR_64x64_4bit", "obj__allocator_8hpp.html#a3f34928a3f1f77a34e5016210dfa367d", null ],
+    [ "BLOCKS_SPR_68x32_8bit", "obj__allocator_8hpp.html#aae50f1dd15d23cb287e3a3fd2b69893a", null ],
+    [ "BLOCKS_SPR_68x68_8bit", "obj__allocator_8hpp.html#a0c50096877336501ce75e48aa16ed082", null ],
+    [ "BLOCKS_SPR_8x16_4bit", "obj__allocator_8hpp.html#abb06b34ab6b38c2cda4cec4ee9efd8b7", null ],
+    [ "BLOCKS_SPR_8x16_8bit", "obj__allocator_8hpp.html#aa7379066b8d766cfae0c158d36df6794", null ],
+    [ "BLOCKS_SPR_8x8_4bit", "obj__allocator_8hpp.html#abf811f8d2ee4811ed3a1974fbd1f2dd9", null ],
+    [ "BLOCKS_SPR_8x8_8bit", "obj__allocator_8hpp.html#ab7c745720b3893b096644513b6a702e8", null ]
+];
