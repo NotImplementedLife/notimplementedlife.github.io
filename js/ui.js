@@ -42,7 +42,7 @@ async function build_ui() {
 				}
 			}
 		}
-		var u_elem = generate_update(updates[i],update_style);				
+		var u_elem = await generate_update(updates[i],update_style);				
 		$("#updates_feed").append(u_elem);
 	}
 	
@@ -60,7 +60,7 @@ async function build_ui() {
 		}
 		if(!add_it) continue;
 	
-		var p_elem = generate_card(projects[i], card_card_style);
+		let p_elem = await generate_card(projects[i], card_card_style);
 		row.append(p_elem);		
 		if(k%4==3) {
 			$('#projects').append(row);
@@ -74,8 +74,8 @@ async function build_ui() {
 		$('#FilterCategory').html("Filtered");
 	$('#projects').append(row);
 	
-	$(document).ready(function(){
-		$('.project_card.clickable').click(function(){
+	$(document).ready(async function(){
+		$('.project_card.clickable').click(async function(){
 			proj_name = $(this).attr("meta");			
 			var project = null;
 			for(var i in projects) {
@@ -85,7 +85,8 @@ async function build_ui() {
 				}
 			}
 			//alert(JSON.stringify(project));
-			$('#modal_presentation').html(generate_card(project, modal_card_style));
+			let card = await generate_card(project, modal_card_style)
+			$('#modal_presentation').html(card);
 			$('#modal_presentation').modal({});
 			
 		});

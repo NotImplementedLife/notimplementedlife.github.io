@@ -18,8 +18,7 @@ async function db_get_projects() {
 	return json.map(prj => Object.assign(new Project, prj));
 }
 
-async function db_get_updates() {
-	console.log(await api_get_repo_latest("rubik"));
+async function db_get_updates() {	
 	let json = await get_json('./db/updates.json');	
 	return json.map(upd => Object.assign(new Update, upd));
 }

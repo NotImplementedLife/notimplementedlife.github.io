@@ -40,7 +40,8 @@ const modal_card_style =
 		<span class="cuteness-alert @(cats)"></span>			
 		<p>@(description)</p>
 		<hr/>
-		@(links)
+		@(download)
+		@(links)		
 	  </div>
 	  <div class="modal-footer">		
 		<!--button type="button" class="btn btn-primary">Save changes</button>
@@ -50,7 +51,7 @@ const modal_card_style =
   </div>`;
 
 
-function generate_card(proj, card_style) {
+async function generate_card(proj, card_style) {
 	var html = card_style;
 	for(property in proj) {
 		var token = `@(${property})`;
@@ -79,7 +80,33 @@ function generate_card(proj, card_style) {
 	}
 	else {
 		html = html.replaceAll("@(links)","");
+	}	
+
+	if(html.includes("@(download)")) {
+		if(proj.latest_version==null) {
+			let data = await api_get_repo_latest(proj["internal-name"]);
+			if(typeof data["tag_name"] !== 'undefined') {							
+				proj.latest_version = data["tag_name"];
+			}
+			if(typeof data["assets"] !== 'undefined') {							
+				if(typeof data["assets"][0]["browser_download_url"] !== 'undefined') {
+					proj.download_link = data["assets"][0]["browser_download_url"];
+				}
+			}
+		}	
+		
+		if(proj.latest_version==null) {
+			html=html.replaceAll("@(download)","");
+		}
+		else {
+			var dld = $("<div>");
+			dld.append("<h4>Download</h4>");
+			dld.append(`<p>Latest version <b>${proj.name} ${proj.latest_version}</b> <a href="${proj.download_link}">Download</a></p>`);
+			html=html.replaceAll("@(download)",dld[0].outerHTML);
+		}
 	}
+	
+						
 	
 	var obj = $(html);
 	$('span.cuteness-alert.true', obj).prop("title", "Cuteness alert : this project contains cats");	

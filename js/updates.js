@@ -6,7 +6,7 @@ const update_style = `<div class="update">
 </div>`;
 
 
-function generate_update(update, update_style) {	
+async function generate_update(update, update_style) {	
 	var html = update_style;
 	for(property in update) {
 		var token = `@(${property})`;
@@ -15,8 +15,10 @@ function generate_update(update, update_style) {
 	}			
 	html = html.replaceAll("@(timetext)", timeDifference(Date.now(), Date.parse(update.timestamp)));	
 	console.log(update.project);
-	if(update.project!=null)
-		html = html.replaceAll("@(project_card)", generate_card(update.project, default_card_style)[0].outerHTML);
+	if(update.project!=null) {		
+		let card = await generate_card(update.project, default_card_style);
+		html = html.replaceAll("@(project_card)", card[0].outerHTML);
+	}
 	else
 		html = html.replaceAll("@(project_card)", "");
 	

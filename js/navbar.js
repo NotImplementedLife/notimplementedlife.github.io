@@ -49,7 +49,7 @@ async function load_navbar(nav, style) {
 	let proj_html = $("<div>");
 	for(i in projects) {
 		if(i>=5) break;
-		var a = $('<a class="dropdown-item">').append(generate_card(projects[i],simple_card_style));			
+		var a = $('<a class="dropdown-item">').append(await generate_card(projects[i],simple_card_style));			
 		proj_html.append(a);
 	}	
 	nav.html(style.replaceAll("@(projects)",proj_html.html()));
