@@ -5,6 +5,13 @@ const update_style = `<div class="update">
 	<hr/>	
 </div>`;
 
+const update_style_no_card = `<div class="update">
+	<h5>@(title)</h5>
+	<span class="timestamp" title="@(timestamp_pretty)">@(timetext)</span><br/>				
+	<p class="description">@(description)</p>
+	<hr/>	
+</div>`;
+
 function getLocale() {
     return (navigator.languages && navigator.languages.length) ? navigator.languages[0] : navigator.language;
 }
@@ -20,7 +27,6 @@ async function generate_update(update, update_style) {
 	html = html.replaceAll("@(timetext)", timeDifference(Date.now(), Date.parse(update.timestamp)));	
 	var date = new Date(update.timestamp);	
 	html = html.replaceAll("@(timestamp_pretty)",date.toLocaleString(getLocale()));
-	console.log(update.project);
 	if(update.project!=null) {		
 		let card = await generate_card(update.project, default_card_style);
 		html = html.replaceAll("@(project_card)", card[0].outerHTML);
@@ -56,14 +62,14 @@ function timeDifference(current, previous) {
     }
 
     else if (elapsed < msPerMonth) {
-        return 'approximately ' + Math.round(elapsed/msPerDay) + ' days ago';   
+        return Math.round(elapsed/msPerDay) + ' days ago';   
     }
 
     else if (elapsed < msPerYear) {
-        return 'approximately ' + Math.round(elapsed/msPerMonth) + ' months ago';   
+        return Math.round(elapsed/msPerMonth) + ' months ago';   
     }
 
     else {
-        return 'approximately ' + Math.round(elapsed/msPerYear ) + ' years ago';   
+        return Math.round(elapsed/msPerYear ) + ' years ago';   
     }
 }

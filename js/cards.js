@@ -42,6 +42,7 @@ const modal_card_style =
 		<hr/>
 		@(download)
 		@(links)		
+		@(updates)		
 	  </div>
 	  <div class="modal-footer">		
 		<!--button type="button" class="btn btn-primary">Save changes</button>
@@ -68,7 +69,7 @@ async function generate_card(proj, card_style) {
 	
 	if(proj.ref!=null) {
 		var urls = $("<div>");
-		urls.append("<h4>External links</h4>")
+		urls.append("<h4>External links</h4><hr/>")
 		for(var name in proj.ref) {
 			var caption = name;			
 			var url = proj.ref[name];			
@@ -76,6 +77,7 @@ async function generate_card(proj, card_style) {
 			if(caption=="github") caption="Source code";
 			urls.append(`<a href='${url}'>${caption}</a><br/>`);
 		}
+		urls.append("<br/>");
 		html = html.replaceAll("@(links)",urls[0].outerHTML);
 	}
 	else {
@@ -100,13 +102,26 @@ async function generate_card(proj, card_style) {
 		}
 		else {
 			var dld = $("<div>");
-			dld.append("<h4>Download</h4>");
-			dld.append(`<p>Latest version <b>${proj.name} ${proj.latest_version}</b> <a href="${proj.download_link}">Download</a></p>`);
+			dld.append("<h4>Download</h4><hr/>");
+			dld.append(`<p>Latest version <b>${proj.name} ${proj.latest_version}</b> <a href="${proj.download_link}">Download</a></p>`);			
 			html=html.replaceAll("@(download)",dld[0].outerHTML);
-		}
+		}				
 	}
 	
-						
+	if(html.includes("@(updates)")) {	
+		var upd = $("<div>");		
+		for(var i in updates) {
+			if(updates[i].project == proj) {
+				let u = await generate_update(updates[i], update_style_no_card);
+				upd.append(u);				
+			}
+		}
+		if(upd.html()=="") {
+			upd.append("<p align='center'>No posts yet.</p>")
+		}
+		upd.prepend("<h4>Updates</h4><hr/>");
+		html=html.replaceAll("@(updates)",upd[0].outerHTML);
+	}						
 	
 	var obj = $(html);
 	$('span.cuteness-alert.true', obj).prop("title", "Cuteness alert : this project contains cats");	
