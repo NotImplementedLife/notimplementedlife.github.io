@@ -1,9 +1,13 @@
 const update_style = `<div class="update">
 	<span>@(project_card) <h3>@(title)</h3></span>	
-	<span class="timestamp" title="@(timestamp)">@(timetext)</span><br/>				
+	<span class="timestamp" title="@(timestamp_pretty)">@(timetext)</span><br/>				
 	<p class="description">@(description)</p>
 	<hr/>	
 </div>`;
+
+function getLocale() {
+    return (navigator.languages && navigator.languages.length) ? navigator.languages[0] : navigator.language;
+}
 
 
 async function generate_update(update, update_style) {	
@@ -14,6 +18,8 @@ async function generate_update(update, update_style) {
 		html = html.replaceAll(token, value);
 	}			
 	html = html.replaceAll("@(timetext)", timeDifference(Date.now(), Date.parse(update.timestamp)));	
+	var date = new Date(update.timestamp);	
+	html = html.replaceAll("@(timestamp_pretty)",date.toLocaleString(getLocale()));
 	console.log(update.project);
 	if(update.project!=null) {		
 		let card = await generate_card(update.project, default_card_style);
