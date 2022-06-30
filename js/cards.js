@@ -40,11 +40,12 @@ const modal_card_style =
 		<span class="cuteness-alert @(cats)"></span>			
 		<p>@(description)</p>
 		<hr/>
+		@(links)
 	  </div>
-	  <!--div class="modal-footer">
-		<button type="button" class="btn btn-primary">Save changes</button>
-		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	  </div-->
+	  <div class="modal-footer">		
+		<!--button type="button" class="btn btn-primary">Save changes</button>
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button-->
+	  </div>
 	</div>
   </div>`;
 
@@ -62,6 +63,22 @@ function generate_card(proj, card_style) {
 	}
 	else {
 		html = html.replaceAll("@(elem_icon)","");
+	}
+	
+	if(proj.ref!=null) {
+		var urls = $("<div>");
+		urls.append("<h4>External links</h4>")
+		for(var name in proj.ref) {
+			var caption = name;			
+			var url = proj.ref[name];			
+			
+			if(caption=="github") caption="Source code";
+			urls.append(`<a href='${url}'>${caption}</a><br/>`);
+		}
+		html = html.replaceAll("@(links)",urls[0].outerHTML);
+	}
+	else {
+		html = html.replaceAll("@(links)","");
 	}
 	
 	var obj = $(html);
