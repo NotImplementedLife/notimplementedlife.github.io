@@ -14,6 +14,7 @@ const simple_card_style =
 
 const card_card_style =
 `<div class="project_card card col-md-3 clickable" style="cursor:pointer" meta="@(internal-name)">
+  @(elem_icon)
   <img class="card-img-top" src="res/@(type).png">
   <div class="card-body">
 	<h5 class="project_name card-title text-center">
@@ -55,6 +56,14 @@ function generate_card(proj, card_style) {
 		var value = proj[property];
 		html = html.replaceAll(token, value);
 	}
+	
+	if(proj.icon!=null) {
+		html = html.replaceAll("@(elem_icon)",`<img src="data:image/png;base64,${proj.icon}"/>`);
+	}
+	else {
+		html = html.replaceAll("@(elem_icon)","");
+	}
+	
 	var obj = $(html);
 	$('span.cuteness-alert.true', obj).prop("title", "Cuteness alert : this project contains cats");	
 	return obj;

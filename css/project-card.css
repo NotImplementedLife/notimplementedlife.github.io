@@ -117,6 +117,23 @@ div.project_card.card .project_name {
 	display:block;
 }
 
+div.project_card.card img {	
+	
+}
+
+div.project_card.card img:first-child {	
+	width:100%;
+	image-rendering: pixelated;                  
+}
+
+div.project_card.card img:not(:first-child) {
+	width:15%;
+	position:absolute;
+	top:10%;
+	right:15%;
+	background:white;
+	border-radius:5px;
+}
 
 /* Modal */
 
