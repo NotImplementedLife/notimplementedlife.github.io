@@ -9,7 +9,9 @@ div.project_card .project_name {
 	font-weight:600;
 }
 
-div.project_card span.project_platform::after {		
+div.project_card span.project_platform::after {			
+	white-space: pre;
+	word-break:keep-all;
 	display:inline-block;	
 	background-color:black;
 	color:white;
