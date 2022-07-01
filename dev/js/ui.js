@@ -12,6 +12,7 @@ const footer =
 			</div>
 			<div class="col-md-3">
 				<h4>Also on</h4>
+				<a href="https://gbatemp.net/members/notimplife.553721/">GBATemp</a><br/>				
 				<a href="https://github.com/NotImplementedLife">GitHub</a><br/>
 				<a href="https://www.youtube.com/channel/UC-0C58sSNynr5kTgT24NXqQ">Youtube</a><br/>				
 			</div>
