@@ -1,5 +1,5 @@
 const navbar_default_style = 
-` <a class="navbar-brand" href="#">notimplementedlife.github.io</a>
+` <a class="navbar-brand" href="#">N&#x2022;I&#x2022;L's Dev Resources</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
   </button>
@@ -7,27 +7,8 @@ const navbar_default_style =
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	<ul class="navbar-nav mr-auto">
 	  <li class="nav-item">
-		<a class="nav-link" href="index.html">Home</a>
-	  </li>
-	  <li class="nav-item">
-		<a class="nav-link" href="categories.html">Categories</a>
-	  </li>
-	  <li class="nav-item dropdown">
-		<a class="nav-link dropdown-toggle" href="#" id="navbarProjects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		  Projects
-		</a>
-		<div class="dropdown-menu" aria-labelledby="navbarProjects w-100">
-		  @(projects)		  
-		  <div class="dropdown-divider"></div>
-		  <a class="dropdown-item" href="projects.html">View all projects...</a>
-		</div>		
-	  </li>
-	  <li class="nav-item">
-		<a class="nav-link" href="dev">Development</a>
-	  </li>
-	  <li class="nav-item">
-		<a class="nav-link" href="about.html">About</a>
-	  </li>
+		<a class="nav-link" href="../index.html">Home</a>
+	  </li>	  	  
 	  <li class="nav-item">
 		<a class="nav-link" href="https://github.com/NotImplementedLife" target="_blank" style="color:black !important;">Github
 			<svg width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
@@ -47,15 +28,8 @@ const navbar_default_style =
   </div>`;
 
 async function load_navbar(nav, style) {
-	nav.addClass("navbar navbar-expand-lg navbar-light bg-light navbar-custom");	
-	let projects = await db_get_projects();
-	let proj_html = $("<div>");
-	for(i in projects) {
-		if(i>=5) break;
-		var a = $('<a class="dropdown-item">').append(await generate_card(projects[i],simple_card_style));			
-		proj_html.append(a);
-	}	
-	nav.html(style.replaceAll("@(projects)",proj_html.html()));
+	nav.addClass("navbar navbar-expand-lg navbar-light bg-light navbar-custom");		
+	nav.html(style);
 }
 
 $(document).ready(function(){
