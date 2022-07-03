@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="./css/style.css"/>
+	</head>
+	<body>
+	
+	<nav id="navbar"></nav>
+
+	<div class="jumbotron"></div>	
+	
+	<div class="modal" tabindex="-1" role="dialog" id="modal_presentation"></div>	
+	<div class="container" id="body">
+	
+	</div>
+	
+	</body>
+	
+	<script src="./js/dependencies/jquery.min.js"></script>
+	<script src="./js/dependencies/bootstrap.min.js"></script>	
+		
+	<script src="./js/url.js"></script>
+	<script src="./js/types.js"></script>
+	<script src="./js/database.js"></script>
+	<script src="./js/cards.js"></script>
+	<script src="./js/navbar.js"></script>
+	<script src="./js/updates.js"></script>
+	<script src="./js/ui.js"></script>
+	
+	<script>		
+		function wait() {
+			if(projects.length==0) {
+				setTimeout(wait, 50);//wait 50 millisecnds then recheck
+				return;
+			}						
+			$(document).ready(async function(){				
+				console.log(projects);
+				var prjname = $.urlParam("project");
+				
+				if(prjname==null) {
+					$("#body").html("<p class='alert alert-danger'>No project to be viewed. Url syntax example: <a align='center' href='./view.html?project=FSPDS'>notimplementedlife.github.io/view.html?project=FSPDS</a></p>");
+				}
+				
+				let project=null;
+				for(var i in projects) {					
+					if(projects[i]["internal-name"]==prjname) {
+						project = projects[i];
+						break;
+					}
+				}
+				if(project==null) {
+					$("#body").html("Looks like this is not one of NotImpLife's projects.");
+				}
+				else {
+					var card = await generate_card(projects[i], full_card_style);
+					$("#body").html(card);
+				}
+				console.log(project);
+				
+				
+			});
+		}			
+		
+		wait();
+	</script>
+
+</html>
+
+
+
+
+

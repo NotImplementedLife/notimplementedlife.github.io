@@ -29,10 +29,13 @@ const modal_card_style =
 `<div class="project_card modal modal-dialog" role="document">
 	<div class="modal-content">
 	  <div class="modal-header">
-		<h5 class="modal-title">@(name)</h5>
+		<h5 class="modal-title">@(name)
+			<br/>
+			<small><a href="./view.html?project=@(internal-name)">View full page</a></small>
+		</h5>		
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		  <span aria-hidden="true">&times;</span>
-		</button>
+		</button>		
 	  </div>
 	  <div class="modal-body">
 		<span class="project_status @(status)"></span>
@@ -49,6 +52,25 @@ const modal_card_style =
 		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button-->
 	  </div>
 	</div>
+  </div>`;
+  
+ const full_card_style =
+`<div class="project_card">	
+	  <div>
+		<h5>
+		<span class="project_status @(status)"></span>
+		@(name)		
+		<span class="project_platform @(platform)"></span>			
+		<span class="cuteness-alert @(cats)"></span>			
+		</h5>
+	  </div>
+	  <div>						
+		<p>@(description)</p>
+		<hr/>
+		@(download)
+		@(links)		
+		@(updates)		
+	  </div>	  
   </div>`;
 
 
