@@ -15,6 +15,6 @@
     "description": "Following the file loading time related concerns, the Flipnote Studio Player homebrew application has been tested on a real Nintendo DS Lite on a load of more than 1000 flipnotes of sizes ranging from 3KB up to 985KB. The chunk-based file loading system actually performed hundreds of times better than expected on a real R4i Gold Pro 2015 flashcard. The flipnotes list list updates instantly and the file size is obtained really fast, compared to the tens of seconds required for the same task running in the emulator. Some small lag may still happen when exploring the flipnotes list due to a \"background provider\" which constantly analyzes the list and tries to fill in the requested/yet not loaded data.",
     "title": "Confirmed: FSPDS performs way better on an actual flashcard",
     "timestamp": "2022-07-24T19:51:08.9513747+03:00",
-    "project": null
+    "project": "FSPDS"
   }
 ]
