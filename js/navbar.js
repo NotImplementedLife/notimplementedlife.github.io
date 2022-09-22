@@ -10,6 +10,9 @@ const navbar_default_style =
 		<a class="nav-link" href="index.html">Home</a>
 	  </li>
 	  <li class="nav-item">
+		<a class="nav-link" href="archive.html">Archive</a>
+	  </li>
+	  <li class="nav-item">
 		<a class="nav-link" href="categories.html">Categories</a>
 	  </li>
 	  <li class="nav-item dropdown">

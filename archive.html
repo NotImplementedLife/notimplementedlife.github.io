@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="./css/style.css"/>
+	</head>
+	<body>
+	
+	<nav id="navbar"></nav>
+
+	<div class="jumbotron text-center"><h2>Forgotten Device Archive</h2></div>
+	<div class="container">		
+		<p>This place is meant to document any electronic device that didn't quite stand the test of time.</p>
+		<p>We are talking about pieces of hardware about which you can barely find something on the internet.
+		There is no available user manual, no selling offers, no known dedicated forums. They are either 
+		possibly brandless, Chinese originated, or their manufacturer website had shut down many years ago. This is the sad story
+		of devices that once were always present in any careless kid's pockets making their life beautiful, but yet no one talks about.</p>
+
+		<h3>Devices List</h3>
+		<ul id="DevicesList">
+			<li name="Naxa NX-123" code="naxa-nx-123"></li>
+			<li name="MP3/MP4 Media Player TF-A11" code="mp-tf-a11"></li>
+		</ul>
+	</div>	
+	
+	<div class="modal" tabindex="-1" role="dialog" id="modal_presentation"></div>
+
+	</body>
+	
+	<script src="./js/dependencies/jquery.min.js"></script>
+	<script src="./js/dependencies/bootstrap.min.js"></script>	
+		
+	<script src="./js/url.js"></script>
+	<script src="./js/types.js"></script>
+	<script src="./js/database.js"></script>
+	<script src="./js/cards.js"></script>
+	<script src="./js/navbar.js"></script>
+	<script src="./js/updates.js"></script>
+	<script src="./js/ui.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#DevicesList li").each(function(){
+				var name = $(this).attr("name");
+				var code = $(this).attr("code");
+				var a = $("<a>");
+				a.html(name);
+				a.attr("href", `archive/${code}.html`);
+				
+				$(this).append(a);
+				
+			});
+		});
+	</script>
+
+</html>

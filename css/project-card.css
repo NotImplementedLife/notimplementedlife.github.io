@@ -57,7 +57,7 @@ div.project_card span.project_status {
 	color:black;	
 }
 
-div.project_card span.project_status::before {		
+div.project_card span.project_status::before {
 	content: "•";
 	font-size:25px;
 	font-family:Consolas;
@@ -73,6 +73,10 @@ div.project_card span.project_status.active {
 
 div.project_card span.project_status.stalled {	
 	color:orange;	
+}
+
+div.project_card span.project_status.upcoming {	
+	color:white;
 }
 
 
@@ -179,6 +183,11 @@ div.project_card.modal span.project_status.stalled::after {
 div.project_card.modal span.project_status.inactive::after {		
 	content: "inactive";	
 	background:red;
+}
+
+div.project_card.modal span.project_status.upcoming::after {		
+	content: "upcoming";	
+	background:magenta;
 }
 
 div.project_card.modal span.project_platform::after {		
