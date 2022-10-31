@@ -145,6 +145,18 @@
     "type": "game",
     "is_homebrew": true,
     "cats": false,
-    "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAM5JREFUWEftklEKAyEMRL3E3q8H6dEL1hFd0jWJyiZKYR/MRyPkTZaGhxle708MR/zNKlg5jSddOY0H1wL4XUPnZyxh5ZHEu0RTgMpJCbaIBUMFaqxLNHJcmkR0ludeJcTrUUR6syyhShiR9pYzC7ukZHsJVVIyVEJb4JrKtgLI1gKjSAXN/gMa3eWM4JzflQN1OSPQ3nJmEQVp7i4HjQTiJKCzPPeQV9RLr7GWg6EC+DIectAtwIkRS5oS5eIlciCKuHjRLbECtsTDfxPCFwCWPZ+qbhgGAAAAAElFTkSuQmCC"
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAO1JREFUeF7t1EEOwyAMRFEu0fv1ID16pRSjJHKDMdmkDeY/aRaF1QxREwAAAAAAAHCd5+u9pMfynVmY5XUi65bXieg4gPzeos/3RGKWX1Sij1ANoMurEcwhIjg1wJZoI1Tl5aVzUX1WzqOO0Hx9GaJ1F2kEt6RR1LsrGY1ZYs30I7gl1wwxglfg0tzF3waQ3MH0X0BPa6Aw/wGebjmj4H4+ennhljMKenclo2kWzOfhy4uqpBTPBfVZOY9YfuO+9DHRyotTA8iXEbG86A5gFZdEUo2wvvgU5UWzqJWouiPMwBwBAAAAAAAAwO+k9AFMPj2fb8WAXwAAAABJRU5ErkJggg=="
+  },
+  {
+    "ref": {},
+    "description": "You are testing a Tetris clone written by cats",
+    "internal-name": "Bugtris",
+    "name": "Bugtris",
+    "platform": "GBA",
+    "status": "active",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": true,
+    "icon": null
   }
 ]

@@ -21,6 +21,12 @@
     "description": "I'm happy to finally release my game for GBAJam2022! \r\n\r\nRun on procedurally generated ice platforms, be careful not to fall, avoid ghosts, have fun! \r\n\r\nThe game features 20+ levels, a \"chillin' \" mode, and multi-language support!\r\n\r\nIt was done with the GBA game engine I'm currently developing.",
     "title": "New GBA homebrew game : Glacia Dungeon",
     "timestamp": "2022-10-31T14:02:31.4083306+02:00",
-    "project": null
+    "project": "GlaciaDungeon"
+  },
+  {
+    "description": "\"In a parallel universe, a group of cats decided to create a Tetris game.\"\r\n\r\nYou have been hired by the team of programmer cats to help with testing their Tetris game. Take part in development and assist them as the game progresses. Each small update can create unexpected glitches. \r\n\r\n(P.S. The cats are not responsible for the <i>actual</i> bugs in the GBA game! I take all the credit for those :)) )\r\n\r\n",
+    "title": "Bugtris - about cats, Tetris, and bug fixes",
+    "timestamp": "2022-10-31T14:17:05.4791155+02:00",
+    "project": "Bugtris"
   }
 ]
