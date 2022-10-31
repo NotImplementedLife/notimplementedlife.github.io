@@ -16,5 +16,11 @@
     "title": "Confirmed: FSPDS performs way better on an actual flashcard",
     "timestamp": "2022-07-24T19:51:08.9513747+03:00",
     "project": "FSPDS"
+  },
+  {
+    "description": "I'm happy to finally release my game for GBAJam2022! \r\n\r\nRun on procedurally generated ice platforms, be careful not to fall, avoid ghosts, have fun! \r\n\r\nThe game features 20+ levels, a \"chillin' \" mode, and multi-language support!\r\n\r\nIt was done with the GBA game engine I'm currently developing.",
+    "title": "New GBA homebrew game : Glacia Dungeon",
+    "timestamp": "2022-10-31T14:02:31.4083306+02:00",
+    "project": null
   }
 ]
