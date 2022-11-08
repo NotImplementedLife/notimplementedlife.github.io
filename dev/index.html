@@ -56,9 +56,9 @@
 		<div class="row">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10" style="background:DarkRed; padding:10px; border-radius:5px; color:white">
-				<div id="GBA_ERR" class="alert alert-warning" role="alert">
+				<!--div id="GBA_ERR" class="alert alert-warning" role="alert">
 				  GBA converter is still under development!
-				</div>			
+				</div-->			
 				<div id="IFT_ERR" class="alert alert-danger" role="alert">
 					Invalid file type
 				</div>								
@@ -85,7 +85,7 @@
 	
 	$(document).ready(function(){
 		$("#IFT_ERR").hide();
-		$("#GBA_ERR").hide();
+		//$("#GBA_ERR").hide();
 	});
 	
 	function convert_rom_html() {
@@ -95,13 +95,14 @@
 			reader.readAsBinaryString(file);
 			reader.onload = function (evt) {						
 				$("#IFT_ERR").hide();
-				$("#GBA_ERR").hide();
+				//$("#GBA_ERR").hide();
 				var extension = /[^.]+$/.exec(file.name)[0].toLowerCase();				
 				if(extension=="gb" || extension=="gbc") {				
 					create_zip_GB(file.name, evt.target.result);
 				}
 				else if(extension=="gba") {
-					$("#GBA_ERR").show();
+					create_zip_GBA(file.name, evt.target.result);
+					//$("#GBA_ERR").show();
 				}
 				else {
 					$("#IFT_ERR").show();
