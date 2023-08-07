@@ -28,5 +28,11 @@
     "title": "Bugtris - about cats, Tetris, and bug fixes",
     "timestamp": "2022-10-31T14:17:05.4791155+02:00",
     "project": "Bugtris"
+  },
+  {
+    "description": "More than two years and a half in development, the homebrew app that brings flipnotes to any DS console is no longer just a proof of concept. FSPDS has received a new user interface and an improved player, along with more useful features, including browsing the filesystem, playback options and viewing flipnote metadata such as the date and author names. My plans for the future of this application is creating an export option to different media formats and, if possible, a flipnote share/multicast feature via DS Download play.",
+    "title": "FSPDS : Made it to 1.0",
+    "timestamp": "2023-08-07T12:29:00.4963341+03:00",
+    "project": null
   }
 ]
