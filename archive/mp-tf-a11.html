@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+	
+	<nav id="navbar"></nav>
+
+	<div class="jumbotron text-center"><h2>MP3/MP4 Media Player TF-A11</h2></div>
+	<div class="container">		
+		
+		<h3>Description</h3>
+				
+		The attraction point of this device is the cool glossy cover which incorporates the screen in a similar way some mobile phones were designed in the 2000's contrasting
+		with the metal back shell. I don't know much about this thing, not even the manufacturer/comany name. An interesting clue is that it contains some sort of Samsung microchip, but I'm no hardware expert and have no means to derive any useful information from that.
+		
+		<h3>Specifications</h3>		
+		
+		<table>
+			<tr>
+				<th>Model</th>
+				<td>TF-A11</td>
+			</tr>
+			<tr>
+				<th>ID Number</th>
+				<td>9893308161</td>
+			</tr>
+		</table>
+				
+		
+		<h3>References</h3>
+		<ul>		
+			<li><a href="https://www.elotrolado.net/hilo_recuperar-mp4-mundo-deportivo_792741">https://www.elotrolado.net/hilo_recuperar-mp4-mundo-deportivo_792741</a><br/>
+				On this forum, someone asks for help regarding an issue with this model </li>
+		</ul>
+		
+		<h3>Pictures</h3>
+		<p>			
+			<img src="res/mp-tf-a11/front.jpg" height="500">
+			<img src="res/mp-tf-a11/back.jpg" height="500">
+			<img src="res/mp-tf-a11/apart-1.jpg" height="500">			
+		</p>
+	</div>	
+	
+	<div class="modal" tabindex="-1" role="dialog" id="modal_presentation"></div>
+
+	</body>
+	
+	<script src="../js/dependencies/jquery.min.js"></script>
+	<script src="../js/dependencies/bootstrap.min.js"></script>	
+		
+	<script src="../js/url.js"></script>
+	<script src="../js/types.js"></script>		
+	<script src="../js/navbar.js"></script>	
+	<script src="../js/ui.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#DevicesList li").each(function(){
+				var name = $(this).attr("name");
+				var code = $(this).attr("code");
+				var a = $("<a>");
+				a.html(name);
+				a.attr("href", `archive/${code}.html`);
+				
+				$(this).append(a);
+				
+			});
+		});
+	</script>
+
+</html>
