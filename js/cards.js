@@ -15,7 +15,7 @@ const simple_card_style =
 const card_card_style =
 `<div class="project_card card col-md-3 clickable" style="cursor:pointer" meta="@(internal-name)">
   @(elem_icon)
-  <img class="card-img-top" src="res/@(type).png">
+  <img class="card-img-top" src="/res/@(type).png">
   <div class="card-body">
 	<h5 class="project_name card-title text-center">
 		<span class="project_status @(status)" title="@(status)"></span>
@@ -31,7 +31,7 @@ const modal_card_style =
 	  <div class="modal-header">
 		<h5 class="modal-title">@(name)
 			<br/>
-			<small><a href="./view.html?project=@(internal-name)">View full page</a></small>
+			<small><a href="/view.html?project=@(internal-name)">View full page</a></small>
 		</h5>		
 		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		  <span aria-hidden="true">&times;</span>

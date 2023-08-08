@@ -7,13 +7,13 @@ const navbar_default_style =
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	<ul class="navbar-nav mr-auto">
 	  <li class="nav-item">
-		<a class="nav-link" href="index.html">Home</a>
+		<a class="nav-link" href="/index.html">Home</a>
 	  </li>
 	  <li class="nav-item">
-		<a class="nav-link" href="archive.html">Archive</a>
+		<a class="nav-link" href="/archive.html">Archive</a>
 	  </li>
 	  <li class="nav-item">
-		<a class="nav-link" href="categories.html">Categories</a>
+		<a class="nav-link" href="/categories.html">Categories</a>
 	  </li>
 	  <li class="nav-item dropdown">
 		<a class="nav-link dropdown-toggle" href="#" id="navbarProjects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -22,14 +22,14 @@ const navbar_default_style =
 		<div class="dropdown-menu" aria-labelledby="navbarProjects w-100">
 		  @(projects)		  
 		  <div class="dropdown-divider"></div>
-		  <a class="dropdown-item" href="projects.html">View all projects...</a>
+		  <a class="dropdown-item" href="/projects.html">View all projects...</a>
 		</div>		
 	  </li>
 	  <li class="nav-item">
-		<a class="nav-link" href="dev">Development</a>
+		<a class="nav-link" href="/dev">Development</a>
 	  </li>
 	  <li class="nav-item">
-		<a class="nav-link" href="about.html">About</a>
+		<a class="nav-link" href="/about.html">About</a>
 	  </li>
 	  <li class="nav-item">
 		<a class="nav-link" href="https://github.com/NotImplementedLife" target="_blank" style="color:black !important;">Github

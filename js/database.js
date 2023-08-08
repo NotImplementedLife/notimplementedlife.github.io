@@ -14,12 +14,12 @@ async function get_json(url) {
 }
 
 async function db_get_projects() {	
-	let json = await get_json('./db/projects.json');	
+	let json = await get_json('/db/projects.json');	
 	return json.map(prj => Object.assign(new Project, prj));
 }
 
 async function db_get_updates() {	
-	let json = await get_json('./db/updates.json');	
+	let json = await get_json('/db/updates.json');
 	return json.map(upd => Object.assign(new Update, upd));
 }
 
