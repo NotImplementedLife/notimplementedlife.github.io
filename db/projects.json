@@ -164,5 +164,21 @@
     "is_homebrew": true,
     "cats": true,
     "icon": null
+  },
+  {
+    "ref": 
+	{
+		"github": "https://github.com/NotImplementedLife/FarmSimAdvance",
+		"itch.io": "https://notimplementedlife.itch.io/FarmSimAdvance"		
+	},
+    "description": "A simple isometric farm game created for Secret Santa Jam 2022. It was inspired by the browser farm game Farmerama which I've played for over 12 years.",
+    "internal-name": "FarmSimAdvance",
+    "name": "FarmSimAdvance",
+    "platform": "GBA",
+    "status": "inactive",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": false,
+    "icon": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMBx2+oZAAABTVJREFUeF7lmFtzFEUcxXnSkkJRIhhgJbAJuRBCEhMTA2Er3CSgQMAEKO5qecfC8kErfg8ffPOj+U3aOZ09m7OdM8nOZvep/1W/6u6zs9P/09PT3bsHQghZY8WcsGJOWDEnrJgTVswJK+aEFXPCijlhxZywYk5YMSesmBNWzAkr5oQVlX7GzH/nYgcs+xHOk2JFpZ8B4+kg9HownCfFiko/Qs3W/z3VqvfaPMJ5Uqyo9CNoFuZp2rVR7jecJ8WKSq9CDbKetnkdYF3LbsJ5Uqyo7DfUBKDp1DzKX9bLB6PbcJ4UKyrdBhOnCQBjzvjlCwM7tDePJtvaes8q4TwpVlS6DSRL1Pjd5doOzV3Htt4r3rhiOE+KFZUqwaTVQKqln2ndad/eGW1rs5/YYQfhPClWVKoEEtNknaFONLA48X6bxvUBsC8ty8J5UqyodBKaDA2gTlSbHzu8Q9PrtNT6/cbHrTb7AqjvFs6TYkWlk2AyTPabL8+2tRfGt5+m6rMj77a1p4e32tRAqqFkn2kbZRrOk2JFpSw0AdZ3a+uTp8a207RkPW0zD8C6lgjnSbGikoZ2AsqSRflpyXRPv3OhfqitzcFSzX3/143trVJzQp3hPClWVNJgJ+zYJaZTnlpZSdDeS2P9xvxHOzQ9NzRTjeE8KVZUGLwxO2HHVff16eGtpw1YL/suSu4GZdeohnpMVsJ5UqyoML67N9bqMO2Ynad1p800F7X0mvRabbvPnQYeXh0qzg5nW4k7T4oVFcRfr2bDg5V288AlUaZxxaeWtllPNXevVANTZw7FsjE9ENYu18Lmy5mYvPOkWFH5+49G+P3JVPiqGIClyQ9iJ2O1d1od77WvOw3l3Oj297hY6udkoYNXAIyceDvUB98KF88fiQPw2+PzAbmnflKsqCA2X87Gg8jy1EA0jEVOOye6r4OYaKK5J68m+VmKfsZ7Yffgkz83dDC28cPq7vLJ8Ofz6d7MAAbWgEfXTof1YiasLh4P1+ePtRIBOLBoG6TJp9pubXdu4DUEgzk3+l58MFc/ORpuLgyG9StD8SDWTNt6UqyopIG9F4vMkxtn4khjMGKSHQyA1p1Wdm5QLeqFcZSN4mljS1xr1MLTm/WAh9RMsxXOk2JFZbf4YW08dnzn0smYDN5rJIap2ErWmNA2Sr4CqmkJMNU53a/MHo194rV8vjocfnowXjBhk3WeFCsqewXeta+LKYdF8trcsXCpWITSAdB61X2dwDwWOPSxUUzzV7dHwuuN9lOfC+dJsaLSaWA2YA++9dnxOAh4P9UASM2m9VQDXFuwA60uDsY+frw/3nFizpNiRaVK4Ik8K14JrAtYmGiCOJNOAxxAzKaLk0fiu/7083p4vb73U9dwnhQrKlXj5+JdRKJfLJ0oDiUfRhNY0WmMvxPYpnHVwNYKfzjOJtzr8fXTlZ48w3lSrKh0E28eToYXt4bj7wS8syvFoqXm1KQax3TnlMeOgIUVix1mFQ42zdtXCudJsaLSbXxfbElga7usxfeXRmlW2wB7OmYIBozbGxY7nESbt60czpNiRWW/geTxxybPDTisxAHQnaI5GLqv46l3M+XTcJ4UKyq9DAwETpO3i50Ce//EqYPR+FKxyGGG0Phu+3rVcJ4UKyq9DrzLMImFDVsmuFf8eMGBCsabl/UsnCfFikq/AkdqTHGARbMp9zycJ8WKSj/jn82VAJrNvoTzpFgxJ6yYE1bMCSvmhBVzwoo5YcWcsGJOWDEnrJgTVswJK+aEFXPCijlhxXwIB/4HyFBRaSQSeQwAAAAASUVORK5CYII="
   }
 ]
