@@ -31,6 +31,21 @@
 		
 		<h3 name="RomToHtml">Make your ROMs playable in browser</h3>
 		
+		<div class="row">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-10" style="background:DarkRed; padding:10px; border-radius:5px; color:white">
+				<!--div id="GBA_ERR" class="alert alert-warning" role="alert">
+				  GBA converter is still under development!
+				</div-->			
+				<div id="IFT_ERR" class="alert alert-danger" role="alert">
+					Invalid file type
+				</div>								
+				<h4>Load your GB/GBC/GBA ROM </h4><input type="file" accept=".gb,.gbc,.gba" id="ROM_Input" />
+				<button onclick="convert_rom_html()" class="btn btn-light">Convert to HTML</button></br>
+			</div>
+			<div class="col-sm-1"></div>
+		</div>
+		
 		<p>
 			Ever since browser emulators have become a thing due to web technologies improvement, now you can play
 			your favorite retro games directly in your browser. No need to look for and install emulators. There are
@@ -52,21 +67,7 @@
 			<li>The Game Boy Advance converter uses the <a href="https://people.ucsc.edu/~jvranek/Website/gbajs/index.html">GBA.js</a> core, without the fancy UI.</li>
 			<li><a href="https://stuk.github.io/jszip/">JSZip</a> library is used to pack the files into a ZIP file</li>			
 			</ul>			
-		</p>				
-		<div class="row">
-			<div class="col-sm-1"></div>
-			<div class="col-sm-10" style="background:DarkRed; padding:10px; border-radius:5px; color:white">
-				<!--div id="GBA_ERR" class="alert alert-warning" role="alert">
-				  GBA converter is still under development!
-				</div-->			
-				<div id="IFT_ERR" class="alert alert-danger" role="alert">
-					Invalid file type
-				</div>								
-				<h4>Load your GB/GBC/GBA ROM </h4><input type="file" accept=".gb,.gbc,.gba" id="ROM_Input" />
-				<button onclick="convert_rom_html()" class="btn btn-light">Convert to HTML</button></br>
-			</div>
-			<div class="col-sm-1"></div>
-		</div>
+		</p>						
 	</div>			
 	
 	<script src="../js/dependencies/jquery.min.js"></script>	
