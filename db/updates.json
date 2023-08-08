@@ -34,5 +34,11 @@
     "title": "FSPDS : Made it to 1.0",
     "timestamp": "2023-08-07T12:29:00.4963341+03:00",
     "project": "FSPDS"
+  },
+  {
+    "description": "Now you can navigate this github.io page more efficiently using the search bar located on the top navbar. Write any words describing what you want to look for and the search engine will automatically find results in projects, updates and other pages for you. Please keep your search terms as simple as possible because the search algorithm is not too advanced to do find fancy connections :)",
+    "title": "New site feature: Search options",
+    "timestamp": "2023-08-08T20:38:00.8027093+03:00",
+    "project": null
   }
 ]

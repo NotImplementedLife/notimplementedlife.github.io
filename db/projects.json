@@ -125,7 +125,7 @@
     "ref": {
       "github": "https://github.com/NotImplementedLife/DualShot"
     },
-    "description": "Beautify your Nintendo DS screenshots by making it seem you took a perfect picture of the DS while playing",
+    "description": "Beautify your DS screenshots by making it seem you took a perfect picture of the DS while playing",
     "internal-name": "DualShot",
     "name": "DualShot",
     "platform": "DotNet",
