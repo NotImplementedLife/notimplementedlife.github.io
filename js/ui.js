@@ -7,7 +7,7 @@ const footer =
 				<h4>Contact</h4>
 				Discord (NotImpLife#1049)<br/>				
 				<a href="https://twitter.com/NotImpLife">Twitter</a><br/>
-				<a rel="me" href="https://retrochat.online/@NotImplementedLife">Mastodon</a>
+				<a rel="me" href="https://retrochat.online/@NotImplementedLife">Mastodon</a><br/>
 			</div>
 			<div class="col-md-3">
 				<h4>Also on</h4>
