@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="me" href="https://retrochat.online/@NotImplementedLife"/>
+		<link rel="stylesheet" href="./css/style.css"/>
+	</head>
+	<body>
+	
+	<nav id="navbar"></nav>
+
+	<div class="jumbotron">
+		<h2 id="Title">Search results for ""</h2>
+	</div>
+	<div class="container">
+		<div id="updates_feed_search"></div>
+		<div id="projects_search"></div>		
+		<div id="html_search"></div>
+	</div>			
+	
+	<div class="modal" tabindex="-1" role="dialog" id="modal_presentation"></div>	
+	
+	</body>
+	
+	<script src="./js/dependencies/jquery.min.js"></script>
+	<script src="./js/dependencies/bootstrap.min.js"></script>	
+		
+	<script src="./js/url.js"></script>
+	<script src="./js/types.js"></script>
+	<script src="./js/database.js"></script>
+	<script src="./js/cards.js"></script>
+	<script src="./js/navbar.js"></script>
+	<script src="./js/updates.js"></script>
+	<script src="./js/ui.js"></script>
+	
+	<script>
+		let searchParams = new URLSearchParams(window.location.search);
+		let searchKey = searchParams.has('key') ? searchParams.get('key').toLowerCase() : "";	
+		$("#Title").html('Search results for "'+searchKey+'"');
+		
+		function str_is_match(str, key) {
+			return str.toLowerCase().includes(key);
+		}
+		
+		function update_is_match(update, key) {
+			return str_is_match(update.description,key) || str_is_match(update.title,key) || (update.project!=null && str_is_match(update.project,key));
+		}
+		
+		async function search_posts(key){
+			updates = await db_get_updates();
+			
+			for(i in updates) {
+				if(update_is_match(updates[i], key)) {					
+					if(updates[i].project != null) {
+						for(j in projects) {				
+							if(projects[j]["internal-name"] == updates[i].project) {					
+								updates[i].project = projects[j];
+								break;
+							}
+						}
+					}
+					var u_elem = await generate_update(updates[i],update_style);				
+					$("#updates_feed_search").append(u_elem);
+				}
+			}
+		}
+		
+		function project_is_match(proj, key) {
+			return str_is_match(proj.description,key) 
+				|| str_is_match(proj.name,key)
+				|| str_is_match(proj.platform,key)
+				|| str_is_match(proj.status,key)
+				|| str_is_match(proj.type,key);
+		}
+		
+		async function search_projects(key){
+			projects = await db_get_projects();
+			
+			var row = $("<div class='row'>");
+			var k=0;
+			for(i in projects) {		
+				if(project_is_match(projects[i], searchKey)){
+					var add_it = true;
+					if(!add_it) continue;
+				
+					let p_elem = await generate_card(projects[i], card_card_style);
+					row.append(p_elem);						
+					if(k%4==3) {
+						$('#projects_search').append(row);
+						row = $("<div class='row'>");					
+					}
+					k++;
+				}
+			}
+			$('#projects_search').append(row);
+		}
+		
+		async function search_html(key){
+			pages = ["/archive/mp-tf-a11.html", "/archive/naxa-nx-123.html", "/dev/index.html", "/about.html", "/archive.html", "/categories.html"];
+			
+			var k=0;
+			var ul = $("<ul>");
+			
+			for(var i in pages){
+				await fetch(pages[i]).then(async function (response) {								
+					var text=await response.text();					
+					if(str_is_match(text, key))
+					{
+						console.log(pages[i]);
+						ul.append("<li><a href='"+pages[i]+"'>"+pages[i]+"</a></li>");
+						k++;
+					}										
+				}).catch(function (err) {		
+					console.warn('Something went wrong.', err);
+				}).catch(e => {
+					console.log(e);
+			  });
+			
+			}
+			
+			if(k>0){						
+				$("#html_search").append("<h3>Other pages</h3>");
+				$("#html_search").append(ul);
+			}
+		}
+		
+		search_posts(searchKey);
+		search_projects(searchKey);
+		search_html(searchKey);
+			
+		
+	</script>
+
+</html>
