@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="../css/style.css"/>
+	</head>
+	<body>
+	
+	<nav id="navbar"></nav>
+
+	<div class="jumbotron text-center"><h2>Naxa NX-123</h2></div>
+	<div class="container">		
+		
+		<h3>Description</h3>
+		
+		Naxa NX-123 is a 2007 MP3 player which features audio and video playback, voice recording, FM radio, games, e-reader, picture viewing and others.
+		It is a nice looking and portable device, however on this particular model the buttons are a bit hard to press, which becomes trivial after checking
+		the inside glue tape which holds the buttons attached to the front shell. It's unclear if this is the result of a reparation or the original design.
+		
+		<h3>Specifications</h3>		
+		
+		<table>
+			<tr>
+				<th>Screen</th>
+				<td>1.8in TFT</td>
+			</tr>
+			<tr>
+				<th>Memory</th>
+				<td>1GB</td>
+			</tr>
+			<tr>
+				<th>Battery</th>
+				<td>3.8V rechargable, 3.5 hours autonomy, max. 8 hours in power save mode</td>
+			</tr>
+			<tr>
+				<th>Port connectivty</th>
+				<td>High Speed USB2.0, micro-B type</td>
+			</tr>
+			
+			<tr>
+				<th>Sound playback</th>
+				<td>MP1, MP2, MP3, WMA, WMV, ASF, WAV</td>
+			</tr>
+			<tr>
+				<th>Video playback</th>
+				<td>AMV 128x128px</td>
+			</tr>
+			<tr>
+				<th>Voice recorder</th>
+				<td>8KHz WAV(32kbps), ACT(8kbps)</td>
+			</tr>
+			<tr>
+				<th>FM Radio</th>
+				<td>Frequencies 76MHz–90MHz / 87MHz–108MHz, Max. stored channels 20+20, Max output (L)10mW + (R)10mW(32Ohm), SNR 45dB</td>
+			</tr>			
+			<tr>
+				<th>Other</th>
+				<td>e-Document reader, JPEG browser, <i>Secret Space</i></td>
+			</tr>
+		</table>
+		
+		<h3>References</h3>
+		<ul>		
+			<li> User manual: <a href="https://manualmachine.com/naxa/nx123/14805178-manual/">https://manualmachine.com/naxa/nx123/14805178-manual/</a></li>
+		</ul>
+		
+		<h3>Pictures</h3>
+		<p>			
+			<img src="res/naxa-nx-123/front.jpg" width="300">
+			<img src="res/naxa-nx-123/back.jpg" width="300">
+			<img src="res/naxa-nx-123/apart-1.jpg" width="300">
+			<img src="res/naxa-nx-123/apart-2.jpg" width="500">
+		</p>
+	</div>	
+	
+	<div class="modal" tabindex="-1" role="dialog" id="modal_presentation"></div>
+
+	</body>
+	
+	<script src="../js/dependencies/jquery.min.js"></script>
+	<script src="../js/dependencies/bootstrap.min.js"></script>	
+		
+	<script src="../js/url.js"></script>
+	<script src="../js/types.js"></script>		
+	<script src="../js/navbar.js"></script>	
+	<script src="../js/ui.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#DevicesList li").each(function(){
+				var name = $(this).attr("name");
+				var code = $(this).attr("code");
+				var a = $("<a>");
+				a.html(name);
+				a.attr("href", `archive/${code}.html`);
+				
+				$(this).append(a);
+				
+			});
+		});
+	</script>
+
+</html>
