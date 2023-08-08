@@ -66,7 +66,7 @@
       "itch.io": "https://notimplementedlife.itch.io/fspds",
       "Universal-DB": "https://db.universal-team.net/ds/fspds"
     },
-    "description": "A DS Phat/Lite app the plays Flipnote Studio .ppm files directly from the flashcard.",
+    "description": "A DS Phat/Lite app the plays Flipnote Studio .ppm files directly from the flashcard. Its purpose is to bring flipnotes to any Nintendo DS handheld",
     "internal-name": "FSPDS",
     "name": "FSPDS",
     "platform": "NDS",
@@ -125,7 +125,7 @@
     "ref": {
       "github": "https://github.com/NotImplementedLife/DualShot"
     },
-    "description": "Beautify your DS screenshots by making it seem you took a perfect picture of the DS while playing",
+    "description": "Beautify your DS screenshots by making it seem you took a perfect picture of the Nintendo DS while playing",
     "internal-name": "DualShot",
     "name": "DualShot",
     "platform": "DotNet",
