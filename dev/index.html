@@ -67,7 +67,24 @@
 			<li>The Game Boy Advance converter uses the <a href="https://people.ucsc.edu/~jvranek/Website/gbajs/index.html">GBA.js</a> core, without the fancy UI.</li>
 			<li><a href="https://stuk.github.io/jszip/">JSZip</a> library is used to pack the files into a ZIP file</li>			
 			</ul>			
-		</p>						
+		</p>			
+
+
+
+		<h3 name="RomToHtml">A build of DeSmuME emulator with easy logs support</h3>
+		
+		<p>
+		I forked DeSmuME and added new debug log features, so that programmers can easily check what happens in their code avoiding stdio logic, which takes up code space and uses at least one background layer to be displayed (which is incommodating if your game visuals need all 4 layers of a screen).
+		<br/>
+		Source code can be found <a href="https://github.com/NotImplementedLife/desmume-wasm">here</a>.
+		<br/>		
+		A windows build can be found <a href="https://github.com/NotImplementedLife/desmume-wasm/releases/tag/win">here</a>.
+		
+		<br/>
+		A C++ log function implementation with targetted messages (info/warn/error) can be found <a href="https://github.com/DS-Creator-Dev/DSCEngine/blob/main/source/DSCEngine/debug/log.cpp">here</a>.
+		</p>
+				
+		
 	</div>			
 	
 	<script src="../js/dependencies/jquery.min.js"></script>	
