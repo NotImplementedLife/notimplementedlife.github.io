@@ -1,4 +1,5 @@
 @import "dependencies/bootstrap.min.css";
+@import "dependencies/font-awesome.min.css";
 @import "project-card.css";
 @import "navbar-custom.css";
 @import "updates.css";
@@ -14,4 +15,8 @@
 }
 html {
   box-sizing: border-box;
+}
+
+#footer a {
+	text-decoration:underline;
 }
