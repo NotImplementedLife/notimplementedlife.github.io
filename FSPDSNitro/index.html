@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<style>
+			::-webkit-scrollbar { width: 10px; height:10px; }			
+			::-webkit-scrollbar-track { background: #f1f1f1; border-radius:10px; }			 			
+			::-webkit-scrollbar-thumb { background: #888; border-radius:10px;  }
+			::-webkit-scrollbar-thumb:hover { background: #555;  }					
+		
+		
+			#workspace {				
+				position:relative;					
+			}
+			
+			#uploader { height:50%; margin:0; padding:0; border:0;}
+			
+			#workspace div.col {																
+				height:calc(100% - 20px);
+				margin:10px; border-radius:10px; border:1px solid orange;
+			}
+			
+			#drop_area {			  
+				margin:10px;
+				width: calc(100% - 20px);
+				height: calc(100% - 20px);
+				display:flex;
+				align-items: center;
+				justify-content: center;
+				border: 2px dashed #ccc;
+				cursor: pointer;
+				position:absolute; top:0; left:0;
+				background:#ffffff80;
+			}
+			
+			#drop_area.drag_over {
+				background-color: #eee;
+			}
+			
+			#playlist_items {
+				position:absolute; top:0; left:0;
+				width:calc(100% - 10px);
+				height:calc(100% - 10px);
+				overflow:auto;
+				list-style-type: none;				
+				padding:0;
+				margin:5px;
+			}
+			
+			#playlist_items > li {		
+				margin: 0px; padding: 0px;			
+				font-size:12px;
+				font-family: monospace;
+			}
+			
+			#playlist_items > li:hover {			
+				background:orange;
+				color:white;
+			}
+						
+		</style>
+	</head>
+	<body>	
+		<h1 align="center">FSPDS NitroFS Build Utility</h1>		
+		
+		<div class="container" id="workspace">
+			</div class="row">				
+				<p style="margin:25px;">
+					<a href="https://notimplementedlife.itch.io/fspds">FSPDS</a> is a homebrew application that allows playback of flipnote animations 
+					created with the Flipnote Studio DSiWare on the older DS and DSLite hardware. FSPDS requires a FAT32 filesystem in order to run properly.
+					This is where it loads flipnotes from and stores cache and configuration data. That limits the usability range of this app to original hardware
+					with flashcard or CFW and a few emulators with very specific settings that enable FAT emulation.
+				</p>
+				
+				<p style="margin:25px;">
+					However, we can use NitroFS to create a read-only filesystem image that is appended to the end of the NDS file. This removes the need for
+					an external filesystem because all the files are in the ROM itself, therefore you can bring your flipnotes on a wider variety of emulators.
+					One downside of this method is that you need to rebuild the entire application whenever you want to edit your flipnotes collection.
+				</p>
+				
+				<p style="margin:25px;">
+					I wrote this simple tool that creates a NDS file containing all the PPM flipnotes you drop in the box below. Press the green button to 
+					download your NDS file. Now, try run it and enjoy!
+				</p>				
+				
+				<p style="margin:25px;font-size:12px;">
+					<b>Privacy note:</b> All the computations are performed locally in-browser. The data you provide on this page is NOT stored anywhere and is NOT shared 
+					with any servers. </br>
+					<u>Please note that the FSPDS Nitro build you download contains all of your flipnotes (which can be considered potentially sensitive and confidential
+					data) in itself. Be careful when you share it.</u>
+					
+				</p>
+			</div>
+			<div class="row" id="uploader">
+				<div class="col col-sm-4" hidden>
+					<h5>Playlists</h5>	
+					<div id="playlists">
+						
+					</div>
+					<!--button class="btn btn-primary" style="display:block">Add playlist</button-->
+				</div>
+				
+				<div class="col col-sm-12">										 
+					<ul id="playlist_items">						
+					</ul>
+					<div id="drop_area">
+						Drop flipnotes here
+					</div>
+					<input type="file" id="file_input" multiple hidden>
+				</div>
+			</div>			
+			<div class="row" style="margin:25px; display:block;">				
+				<center><button id="btn_download" class="btn btn-success">Download your FSPDS build</button></center>
+			</div>			
+			
+			<div class="row" style="margin:25px; display:block;">				
+				<h3>Credits</h3><br/>
+				
+				<ul>
+					<li>
+						<a href="https://github.com/devkitPro/ndstool">ndstool</a>, recompiled from source code to WebAssembly					
+						<!--
+							emcc source/banner.cpp source/bigint.cpp source/compile_date.c source/crc.cpp source/default_icon.c source/elf.cpp \
+								  source/encryption.cpp source/header.cpp source/hook.cpp source/loadme.c source/logo.cpp source/ndscodes.cpp \
+								  source/ndscreate.cpp source/ndsextract.cpp source/ndstool.cpp source/ndstree.cpp source/raster.cpp source/sha1.cpp \
+								  -o ndstool.html -s LINKABLE=1 -s EXPORT_ALL=1 -s INVOKE_RUN=0
+							
+							Replaced this line 
+							
+								printf("Nintendo DS rom tool " PACKAGE_VERSION " - %s\nby Rafael Vuijk, Dave Murphy, Alexei Karpenko\n",CompileDate);
+							
+							with
+							
+								printf("Nintendo DS rom tool <PACKAGE_VERSION> - %s\nby Rafael Vuijk, Dave Murphy, Alexei Karpenko\n",CompileDate);							
+							
+							to solve some compiler errors. I used the latest ndstool repository code as of 1 Aug 2024.												
+						-->
+					</li>
+				</ul>		
+				
+				<h3>Links</h3><br/>
+				<ul>
+					<li>Back to home: <a href="https://notimplementedlife.github.io">https://notimplementedlife.github.io</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		</br></br></br></br>
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="js/fsio.js"></script>
+		<script src="js/playlists.js"></script>
+		
+		<script src="ndstool.js"></script>
+		<script src="main.js"></script>				
+	</body>
+<html>

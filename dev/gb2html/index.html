@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<link rel="stylesheet" href="/css/dependencies/bootstrap.min.css"/>		
+		<link rel="stylesheet" href="/css/dependencies/mdb.min.css" type="text/css" />		
+		<link rel="stylesheet" href="/css/style.css"/>		
+	</head>
+
+	<body>		
+		<div class="container">
+			<h3>Make your ROMs playable in browser</h3>
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10" style="background:DarkRed; padding:10px; border-radius:5px; color:white">
+					<!--div id="GBA_ERR" class="alert alert-warning" role="alert">
+					  GBA converter is still under development!
+					</div-->			
+					<div id="IFT_ERR" class="alert alert-danger" role="alert">
+						Invalid file type
+					</div>								
+					<h4>Load your GB/GBC/GBA ROM </h4><input type="file" accept=".gb,.gbc,.gba" id="ROM_Input" />
+					<button onclick="convert_rom_html()" class="btn btn-light">Convert to HTML</button></br>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+
+			<p>
+				Ever since browser emulators have become a thing due to web technologies improvement, now you can play
+				your favorite retro games directly in your browser. No need to look for and install emulators. There are
+				quite a few online emulators like <a href="https://taisel.github.io/GameBoy-Online/">GameBoy Online</a> and
+				<a href="https://endrift.github.io/gbajs/">GBA.js</a>. They are rich in features, 
+				some of them I probably never heard about, but maybe some of us need or want simpler things that just work.
+				<br/>
+				I created a tool that takes a binary ROM and includes it in a modified version of such browser emulators, so that
+				you can load a game directly by clicking a HTML file. This is useful for directly embedding the ROM to be played on web pages.
+				The page contains everything it needs, it runs as a pure static HTML, there is no need to be on a server or require an external
+				binary from the filesystem. It's just click & run.
+				<br/>
+				<h4>Credits</h4>
+				<ul>
+				<li>For the Game Boy converter, I modified <a href="https://www.gbstudio.dev/docs/build/#:~:text=or%20KiGB.-,Build%20and%20deploy%20for%20Web,-Clicking%20the%20Export">GB Studio</a>'s
+				HTML export files, so that you are able to convert <i>any</i> Game Boy (Color) homebrew game to a browser playable version. It is useful for those who
+				rely on other tools than GB Studio to make their games (like GBDK, RGBASM etc.) but still want to easily publish their games online.</li>
+				
+				<li>The Game Boy Advance converter uses the <a href="https://people.ucsc.edu/~jvranek/Website/gbajs/index.html">GBA.js</a> core, without the fancy UI.</li>
+				<li><a href="https://stuk.github.io/jszip/">JSZip</a> library is used to pack the files into a ZIP file</li>			
+				</ul>			
+			</p>	
+		</div>		
+	</body>
+	
+	<script src="/js/dependencies/jquery.min.js"></script>	
+	<script src="/js/dependencies/bootstrap.min.js"></script>		
+	<script src="/js/dependencies/mdb.min.js"></script>
+		
+	<script src="./js/jszip.min.js"></script>
+	<script src="./js/rom_to_browser_api.js"></script>
+	
+	<script>	
+		$(document).ready(function(){
+			$("#IFT_ERR").hide();
+			//$("#GBA_ERR").hide();
+		});
+		
+		function convert_rom_html() {
+			var file=$('#ROM_Input').prop('files')[0];
+			if (file) {
+				var reader = new FileReader();			
+				reader.readAsBinaryString(file);
+				reader.onload = function (evt) {						
+					$("#IFT_ERR").hide();
+					//$("#GBA_ERR").hide();
+					var extension = /[^.]+$/.exec(file.name)[0].toLowerCase();				
+					if(extension=="gb" || extension=="gbc") {				
+						create_zip_GB(file.name, evt.target.result);
+					}
+					else if(extension=="gba") {
+						create_zip_GBA(file.name, evt.target.result);
+						//$("#GBA_ERR").show();
+					}
+					else {
+						$("#IFT_ERR").show();
+					}
+				}
+				reader.onerror = function (evt) {
+					alert("error");				
+				}
+			}				
+		}
+	</script>
+</html>

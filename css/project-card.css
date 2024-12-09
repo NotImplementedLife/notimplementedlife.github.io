@@ -1,0 +1,249 @@
+div.project_card {	
+	display:inline-block;
+	padding:3px 10px;
+	border-radius:4px;
+}
+
+div.project_card.basic {
+	display:block;
+}
+
+div.project_card .project_name {
+	display:inline-block;
+	font-weight:600;
+}
+
+div.project_card span.project_platform::after {			
+	white-space: pre;
+	word-break:keep-all;
+	display:inline-block;	
+	background-color:black;
+	color:white;
+	padding:2px 7px;
+	border-radius:7px;
+	font-size:75%;
+	content:"(...)";
+}
+
+div.project_card span.project_platform.GB::after {		
+	background-color:green;
+	color:white;	
+	content:"GB";
+}
+
+div.project_card span.project_platform.GBC::after {		
+	background-color:purple;
+	color:white;	
+	content:"GBC";
+}
+
+div.project_card span.project_platform.GBA::after {		
+	background-color:blue;
+	color:white;		
+	content:"GBA";	
+}
+
+div.project_card span.project_platform.NDS::after {		
+	background-color:#800000;
+	color:white;	
+	content:"NDS";
+}
+
+div.project_card span.project_platform.DotNet::after {		
+	background-color:darkblue;
+	color:white;	
+	content:".NET";
+}
+
+
+div.project_card span.project_status {
+	display:inline-block;
+	color:black;	
+}
+
+div.project_card span.project_status::before {
+	content: "•";
+	font-size:25px;
+	font-family:Consolas;
+}
+
+div.project_card span.project_status.inactive {	
+	color:red;	
+}
+
+div.project_card span.project_status.active {	
+	color:green;	
+}
+
+div.project_card span.project_status.stalled {	
+	color:orange;	
+}
+
+div.project_card span.project_status.upcoming {	
+	color:white;
+}
+
+
+div.project_card span.cuteness-alert.true::before {
+	display:inline-block;	
+	background-color:#e75480;
+	color:white;
+	padding:2px 7px;
+	border-radius:7px;
+	font-size:75%;
+	content:"Cats";	
+}
+
+/* Simple */
+
+div.project_card.simple {	
+	background:transparent;
+	display:block;
+	padding:0;
+	margin:2px;
+}
+
+div.project_card.simple .project_name {	
+	font-weight:normal;
+}
+
+div.project_card.simple span.project_status::before {		
+	content: "•";
+	font-size:20px;
+	font-family:Consolas;
+}
+
+/* Card */
+
+div.project_card.card {	
+	background:transparent;
+	display: inline-block;
+	padding:0;
+	margin:0;
+}
+
+div.project_card.card .project_name {	
+	font-weight:normal;	
+	display:block;
+}
+
+div.project_card.card img {	
+	
+}
+
+div.project_card.card img:first-child {	
+	width:100%;
+	image-rendering: pixelated;                  
+}
+
+div.project_card.card img:not(:first-child) {
+	width:15%;
+	position:absolute;
+	top:10%;
+	right:15%;
+	background:white;
+	border-radius:5px;
+}
+
+/* Modal */
+
+div.project_card.modal {
+	background:transparent;
+	padding:auto;
+	display:block;
+	margin:auto;
+}
+
+div.project_card.modal span.project_status::before {		
+	content: "Status ";
+	font-size:14px;
+	font-family:auto;
+	color:white;
+	background:#111111;
+	padding:3px;
+	padding-left:5px;
+	border-radius : 4px 0px 0px 4px;	
+}
+
+div.project_card.modal span.project_status::after {			
+	font-size:14px;
+	font-family:auto;
+	padding:3px;
+	padding-right:5px;
+	border-radius : 0px 4px 4px 0px;	
+	color:white;
+}
+
+div.project_card.modal span.project_status.active::after {		
+	content: "active";
+	background:green;
+}
+
+div.project_card.modal span.project_status.stalled::after {		
+	content: "stalled";	
+	background:orange;
+}
+
+div.project_card.modal span.project_status.inactive::after {		
+	content: "inactive";	
+	background:red;
+}
+
+div.project_card.modal span.project_status.upcoming::after {		
+	content: "upcoming";	
+	background:magenta;
+}
+
+div.project_card.modal span.project_platform::after {		
+	font-size:14px;
+	font-family:auto;
+	padding:3px;
+	padding-right:5px;
+	border-radius : 0px 4px 4px 0px;		
+	display:inline;
+}
+
+div.project_card.modal span.project_platform::before {			
+	font-size:14px;
+	font-family:auto;
+	padding:3px;
+	padding-left:5px;
+	content:"Platform";
+	background:#111111;
+	color:white;
+	border-radius : 4px 0px 0px 4px;
+}
+
+
+div.project_card.modal span.project_platform.GB::after {		
+	content:"Game Boy";
+}
+
+div.project_card.modal span.project_platform.GBC::after {		
+	content:"Game Boy Color";
+}
+
+div.project_card.modal span.project_platform.GBA::after {		
+	content:"Game Boy Advance";
+}
+
+div.project_card.modal span.project_platform.NDS::after {		
+	content:"Nintendo DS";
+}
+
+div.project_card.modal span.cuteness-alert.true::before {
+	display:inline;	
+	font-family:auto;
+	background-color:#e75480;
+	color:white;
+	padding:3px 5px;	
+	border-radius:4px;
+	font-size:14px;
+	content:"Cats";	
+}
+
+
+
+
+
+

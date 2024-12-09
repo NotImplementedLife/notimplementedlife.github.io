@@ -1,0 +1,183 @@
+[
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/A-4D-Christmas"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/a-4d-christmas"}
+    ],
+    "description": "Christmas-themed 3D space shooter with a magical sleigh",
+    "internal-name": "A-4D-Christmas",
+    "name": "A 4D Christmas",
+    "platform": "GBA",
+    "status": "inactive",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": false,
+    "icon": null
+  },
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/AIRPLANZ"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/airplanz"}      
+    ],
+    "description": "Game Boy port of a pen and paper battleship-like game, but with planes",
+    "internal-name": "AIRPLANZ",
+    "name": "AIRPLANZ",
+    "platform": "GB",
+    "status": "inactive",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": false,
+    "icon": null
+  },
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/brekstascat"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/brekstascat"}      
+    ],
+    "description": "Sliding puzzle game, also an attempt of 2D scroll RPG",
+    "internal-name": "brekstascat",
+    "name": "Breksta's Cat",
+    "platform": "GB",
+    "status": "stalled",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": true,
+    "icon": "/database/icons/ic_bkt.png"
+  },
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/d-Elusion"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/d-elusion"},
+	  {"platform":"Universal-DB", "url":"https://db.universal-team.net/ds/d-elusion"}      
+    ],
+    "description": "A kitty trapped in an invisible labirint trying to find the way to its mother",
+    "internal-name": "d-Elusion",
+    "name": "d-Elusion",
+    "platform": "NDS",
+    "status": "inactive",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": true,
+    "icon": null
+  },
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/FSPDS"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/fspds"},
+	  {"platform":"Universal-DB", "url":"https://db.universal-team.net/ds/fspds"}            
+    ],
+    "description": "A DS Phat/Lite app the plays Flipnote Studio .ppm files directly from the flashcard. Its purpose is to bring flipnotes to any Nintendo DS handheld",
+    "internal-name": "FSPDS",
+    "name": "FSPDS",
+    "platform": "NDS",
+    "status": "active",
+    "type": "tool",
+    "is_homebrew": true,
+    "cats": false,
+    "icon": "/database/icons/ic_fspds.png"
+  },
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/NotebookAdventure"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/notebook-adventure"}      
+    ],
+    "description": "My first platformer game happens to take place on a notebook page.",
+    "internal-name": "NotebookAdventure",
+    "name": "Notebook Adventure",
+    "platform": "GBA",
+    "status": "inactive",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": true,
+    "icon": "database/icons/ic_nb_adv.png"
+  },
+  {
+    "ref": [
+      {"platform":"github", "url":"https://github.com/NotImplementedLife/rubik"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/rubik"}
+    ],
+    "description": "A rubik's cube simulator for the Game Boy",
+    "internal-name": "rubik",
+    "name": "Rubik",
+    "platform": "GB",
+    "status": "inactive",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": false,
+    "icon": "database/icons/ic_rbk.png"
+  },
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/Trabant"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/trabant"}      
+    ],
+    "description": "Messing around with parallax on Game Boy",
+    "internal-name": "Trabant",
+    "name": "Trabant",
+    "platform": "GBC",
+    "status": "inactive",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": false,
+    "icon": "database/icons/ic_trb.png"
+  },
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/DualShot"}   
+    ],
+    "description": "Beautify your DS screenshots by making it seem you took a perfect picture of the Nintendo DS while playing",
+    "internal-name": "DualShot",
+    "name": "DualShot",
+    "platform": "DotNet",
+    "status": "inactive",
+    "type": "tool",
+    "is_homebrew": false,
+    "cats": false,
+    "icon": "database/icons/ic_dshot.png"
+  },
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/GlaciaDungeon"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/glaciadungeon"}      
+    ],
+    "description": "Ice skating simulation for Game Boy Advance",
+    "internal-name": "GlaciaDungeon",
+    "name": "Glacia Dungeon",
+    "platform": "GBA",
+    "status": "stalled",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": false,
+    "icon": "/database/icons/ic_gl_dng.png"
+  },
+  {
+    "ref": [
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/Bugtris"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/bugtris"}      
+    ],
+    "description": "You are testing a Tetris clone written by cats",
+    "internal-name": "Bugtris",
+    "name": "Bugtris",
+    "platform": "GBA",
+    "status": "stalled",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": true,
+    "icon": null
+  },
+  {
+    "ref": [	
+	  {"platform":"github", "url":"https://github.com/NotImplementedLife/FarmSimAdvance"},
+	  {"platform":"itch.io", "url":"https://notimplementedlife.itch.io/FarmSimAdvance"}	  
+	],
+    "description": "A simple isometric farm game created for Secret Santa Jam 2022. It was inspired by the browser farm game Farmerama which I've played for over 12 years.",
+    "internal-name": "FarmSimAdvance",
+    "name": "FarmSimAdvance",
+    "platform": "GBA",
+    "status": "inactive",
+    "type": "game",
+    "is_homebrew": true,
+    "cats": false,
+    "icon": "/database/icons/ic_fsa.png"
+  }
+]

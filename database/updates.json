@@ -1,0 +1,56 @@
+[
+  {
+    "description": "Since the dynamic filesystem loader has started to take form, there appeared speed issues on loading individual files from populated directories (>500 files). At least, this happens under DeSmuME's R4 flashcard emulation. I have to try this on hardware as soon as possible in order to decide on how to fix this issue",
+    "title": "Work on FSPDS is postponed until I have the chance do a hardware test",
+    "timestamp": "2022-06-26T11:57:21.2750155+03:00",
+    "project": "FSPDS"
+  },
+  {
+    "description": "A year ago yesterday, I published my first itch.io game page. Since then, I released a total of 8 games which summed over time 2000 views and more than 500 downloads. I know, despite numbers being just numbers with less meaning than we tend to imagine, they sometimes manage to fill us with the confidence that we are heading to a \"right\" direction (what a relative word...). The experience I gained via homebrew development is by far the most valuable I have had in the last (almost) two years. From the good-sounding but weakly-brainstormed ideas to the final satisfaction of showing my work to people with same interests as me, it's a difficult yet enjoyable journey. A big thanks to the entire homebrew community for making all this possible, be they developers, players, legends who create all sort of modern sophisticated tools for our old cherished retro stuff, or maybe simple wonderers like me. Curious about how my next projects will be? Trust me, I have no clue either. We'll discover this at the right time. Until then, be blessed everyone!",
+    "title": "1 year of itch.io",
+    "timestamp": "2022-06-26T13:25:47.4595324+03:00",
+    "project": null
+  },
+  {
+    "description": "Following the file loading time related concerns, the Flipnote Studio Player homebrew application has been tested on a real Nintendo DS Lite on a load of more than 1000 flipnotes of sizes ranging from 3KB up to 985KB. The chunk-based file loading system actually performed hundreds of times better than expected on a real R4i Gold Pro 2015 flashcard. The flipnotes list list updates instantly and the file size is obtained really fast, compared to the tens of seconds required for the same task running in the emulator. Some small lag may still happen when exploring the flipnotes list due to a \"background provider\" which constantly analyzes the list and tries to fill in the requested/yet not loaded data.",
+    "title": "Confirmed: FSPDS performs way better on an actual flashcard",
+    "timestamp": "2022-07-24T19:51:08.9513747+03:00",
+    "project": "FSPDS"
+  },
+  {
+    "description": "I'm happy to finally release my game for GBAJam2022! \r\n\r\nRun on procedurally generated ice platforms, be careful not to fall, avoid ghosts, have fun! \r\n\r\nThe game features 20+ levels, a \"chillin' \" mode, and multi-language support!\r\n\r\nIt was done with the GBA game engine I'm currently developing.",
+    "title": "New GBA homebrew game : Glacia Dungeon",
+    "timestamp": "2022-10-31T14:02:31.4083306+02:00",
+    "project": "GlaciaDungeon"
+  },
+  {
+    "description": "\"In a parallel universe, a group of cats decided to create a Tetris game.\"\r\n\r\nYou have been hired by the team of programmer cats to help with testing their Tetris game. Take part in development and assist them as the game progresses. Each small update can create unexpected glitches. \r\n\r\n(P.S. The cats are not responsible for the <i>actual</i> bugs in the GBA game! I take all the credit for those :)) )\r\n\r\n",
+    "title": "Bugtris - about cats, Tetris, and bug fixes",
+    "timestamp": "2022-10-31T14:17:05.4791155+02:00",
+    "project": "Bugtris"
+  },
+  {
+    "description": "More than two years and a half in development, the homebrew app that brings flipnotes to any DS console is no longer just a proof of concept. FSPDS has received a new user interface and an improved player, along with more useful features, including browsing the filesystem, playback options and viewing flipnote metadata such as the date and author names. My plans for the future of this application is creating an export option to different media formats and, if possible, a flipnote share/multicast feature via DS Download play.",
+    "title": "FSPDS : Made it to 1.0",
+    "timestamp": "2023-08-07T12:29:00.4963341+03:00",
+    "project": "FSPDS"
+  },
+  {
+    "description": "Now you can navigate this github.io page more efficiently using the search bar located on the top navbar. Write any words describing what you want to look for and the search engine will automatically find results in projects, updates and other pages for you. Please keep your search terms as simple as possible because the search algorithm is not too advanced to find fancy connections :)",
+    "title": "New site feature: Search options",
+    "timestamp": "2023-08-08T20:38:00.8027093+03:00",
+    "project": null
+  },
+  {
+    "description": "The portability of the flipnote studio player FSPDS is contrained by the fact that it depends on an filesystem to scan flipnotes and store the app data. Due to this reason, FSPDS could only run on flashcards or modded hardware. However, one month ago I have released a tool called FSPDSNitro that allows embedding flipnotes into the ROM itself, making it possible to view flipnotes in emulators that support NitroFS. Check <a href='/FSPDSNitro' target='_blank'>this link</a> for more details.",
+    "title": "View flipnotes in emulator with FSPDSNitro",
+    "timestamp": "2024-09-04T18:04:12.4400000+03:00",
+    "project": "FSPDS"
+  },  
+  {
+    "description": "I have redesigned my site to give it a fresh look trying to keep things as organized as possible",
+    "title": "Updated site",
+    "timestamp": "2024-09-04T18:09:12.4400000+03:00",
+    "project": null
+  }  
+]

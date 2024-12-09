@@ -1,0 +1,12 @@
+div.update h3 {	
+	margin-right:15px;
+}
+
+div.update span.timestamp {
+	display:block;
+	font-style:italic;
+}
+
+div.update p.description {
+	
+}

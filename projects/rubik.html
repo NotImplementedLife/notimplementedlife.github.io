@@ -1,0 +1,178 @@
+	<!DOCTYPE html>
+	<html>	
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+			<meta http-equiv='cache-control' content='no-cache'>
+			<meta http-equiv='expires' content='0'>
+			<meta http-equiv='pragma' content='no-cache'>
+			
+			<link rel="me" href="https://retrochat.online/@NotImplementedLife"/>
+			<link rel="stylesheet" href="../css/style.css"/>
+			
+			<style>
+				body {
+					background: #20001E;
+					height: 100vh;
+					margin: 0; 
+					padding 0;												
+				}		
+				main {					
+					overflow-y:auto;
+					display:fixed;
+					top:0; left:0;
+					width:100%;
+					height:100%;
+					background-attachment: fixed;
+					background-image: url('/res/bg.jpeg');
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+				a {
+					color:#800000;
+				}
+			</style>
+		</head>
+		<body>		
+			<main>
+					<nav class="navbar navbar-expand-lg navbar-light navbar-custom" style="background:#ffffffc0; backdrop-filter: blur(5px); z-index:10;">
+	  <a class="navbar-brand" href="#">notimplementedlife.github.io</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item">
+			<a class="nav-link" href="/index.html">Home</a>
+		  </li>
+		  <!--li class="nav-item">
+			<a class="nav-link" href="/archive.html">Archive</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/categories.html">Categories</a>
+		  </li-->
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarProjects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  Projects
+			</a>			
+			<div class="dropdown-menu" aria-labelledby="navbarProjects w-100">
+				<div>
+									
+					<a class="dropdown-item" href="/projects/A-4D-Christmas.html">
+						<div class="project_card simple clickable" meta="A-4D-Christmas">
+							<span class="project_status inactive" title="inactive"></span>
+							<span class="project_name">A 4D Christmas</span>
+							<span class="project_platform GBA"></span>		
+						</div>				
+					</a>
+					
+									
+					<a class="dropdown-item" href="/projects/AIRPLANZ.html">
+						<div class="project_card simple clickable" meta="AIRPLANZ">
+							<span class="project_status inactive" title="inactive"></span>
+							<span class="project_name">AIRPLANZ</span>
+							<span class="project_platform GB"></span>		
+						</div>				
+					</a>
+					
+									
+					<a class="dropdown-item" href="/projects/brekstascat.html">
+						<div class="project_card simple clickable" meta="brekstascat">
+							<span class="project_status stalled" title="stalled"></span>
+							<span class="project_name">Breksta's Cat</span>
+							<span class="project_platform GB"></span>		
+						</div>				
+					</a>
+					
+									
+					<a class="dropdown-item" href="/projects/d-Elusion.html">
+						<div class="project_card simple clickable" meta="d-Elusion">
+							<span class="project_status inactive" title="inactive"></span>
+							<span class="project_name">d-Elusion</span>
+							<span class="project_platform NDS"></span>		
+						</div>				
+					</a>
+					
+									
+					<a class="dropdown-item" href="/projects/FSPDS.html">
+						<div class="project_card simple clickable" meta="FSPDS">
+							<span class="project_status active" title="active"></span>
+							<span class="project_name">FSPDS</span>
+							<span class="project_platform NDS"></span>		
+						</div>				
+					</a>
+					
+								</div>			
+			  <div class="dropdown-divider"></div>		  
+			  <a class="dropdown-item" href="/projects.html">View all projects...</a>
+			</div>		
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/dev.html"">Development</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="/about.html"">About</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="https://github.com/NotImplementedLife" target="_blank" style="color:black !important;">Github
+				<svg width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+				<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+				<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+				</svg>
+			</a>
+		  </li>
+		  <!--li class="nav-item">
+			<a class="nav-link disabled" href="#">Disabled</a>
+		  </li-->
+		</ul>
+		<form class="form-inline my-2 my-lg-0" onsubmit="return perform_search(event);">
+		  <input class="form-control mr-sm-2" type="search" name="key" placeholder="Search" aria-label="Search">
+		  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	  </div>  
+	</nav>
+				
+				
+				<div class="container" style="background:#ffffffc0; border-radius:5px; padding:20px; min-height:80%; margin-top:50px; backdrop-filter: blur(5px);">
+					<div id="context">
+							
+
+		<div class="project_card basic">
+				<img src="database/icons/ic_rbk.png" style="float:right; width:128px;">
+				<h1>		
+			<span class="project_status inactive"></span> Rubik		</h1>			
+		<h5>
+			<span class="project_platform GB"></span>
+			<span class="cuteness-alert "></span>
+		</h5>
+		<hr/>
+		<p>A rubik's cube simulator for the Game Boy</p>
+		
+		
+		<h2>External links</h2><hr/>
+		<ul>
+						
+				<li><a href="https://github.com/NotImplementedLife/rubik" target="_blank">github</a></li>
+						
+				<li><a href="https://notimplementedlife.itch.io/rubik" target="_blank">itch.io</a></li>
+					
+		</ul>
+		
+
+		<h2>Updates</h2><hr/>
+		
+				
+				<p><a href="../projects.html">Back to projects</a></p>
+	</div>
+					</div>			
+				</div>
+			</main>
+			<div class="modal" tabindex="-1" role="dialog" id="modal_presentation"></div>			
+		</body>	
+					
+		<script src="../js/dependencies/jquery.min.js"></script>
+		<script src="../js/dependencies/bootstrap.min.js"></script>			
+	</html>
