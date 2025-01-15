@@ -1,0 +1,33 @@
+<html>
+	<head>
+		
+	</head>
+	
+	<body>
+		
+		<textarea id="cels_input">print("Runs in python: ", 1+2)</textarea>
+		<button onclick="runPython(document.getElementById('cels_input').value)">
+		Run
+		</button>
+		
+	</body>
+	
+	<script src="pyodide/pyodide.js"></script>
+	<script>
+		var runPython;
+	
+		async function main() {
+			console.log("Loading pyodide")
+			let pyodide = await loadPyodide();
+			console.log("Loaded pyodide")
+			runPython = pyodide.runPython;
+			
+			console.log(pyodide.runPython(`
+				import sys				
+				sys.version
+				print("Here?")
+			`));
+			};
+		main();
+	</script>
+</html>
